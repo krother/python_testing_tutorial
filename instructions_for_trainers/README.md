@@ -2,54 +2,61 @@
 
 ## Overview
 The material here allows you to conduct a one-hour training session on the Python unittest module. It is intended for programmers who have already written programs on their own but would like to learn about automated software testing.
-The Challenge
 
-Melvilles book “Moby Dick” is about the fight between the captain of a whaling ship and a whale. While the whale prevails by eating most of the other characters, does he also win by points? The trainees are to find out whether the whale or the captain is the most important character in the book. They will do so by counting how often words occur in the text.
-This task easily yields very different results (e.g. because of upper/lower case, special characters etc). Therefore the program needs to be thoroughly tested.
-Learning Objective
-During the tutorial participants will implement a test function that passes for the Moby Dick example using the unittest module within 20'.
-Duration
+## The Challenge
+
+Melvilles book “Moby Dick” is about the epic fight between the captain of a whaling ship and a whale. **The whale prevails by eating most of the other characters, does he also win by points?**
+
+The trainees are to find out whether the whale or the captain is the most frequently mentioned character in the book. They will do so by counting how often words occur in the text.
+
+The task easily yields very different results (e.g. because of upper/lower case, special characters etc). Therefore the program needs to be thoroughly tested.
+
+### Learning Objective
+During the tutorial participants will implement automatic test functions that pass for the Moby Dick example. using the unittest module within 20'.
+
+### Duration
 one hour for a group of experienced developers. For beginners, you may double or triple that time.
-Material
-Handout “Introduction to the unittest Framework in Python”
-Slide: Challenge
-Slide: Task description
-TextAnalyser.py
-TestTextAnalyzer.py
-Task Description
+
+### Material
+* Handout “Introduction to the unittest Framework in Python”
+* Slide: Challenge
+* Slide: Task description
+* TextAnalyser.py
+* TestTextAnalyzer.py
+
+## Task Description
 What are the 5 words that Melville used the most in Moby Dick?
 Extend the TextAnalyser class with a function that returns the five most frequent words from Melvilles “Moby Dick”.
 Add a corresponding test function to the TextAnalyserTests module.
+
 Ensure that the test passes.
 
 ## Lesson Plan
-1.
-Introduction:
+1. Introduction:
 Why are we here?
 How do you know that your code works?
 How do you test your code?
 5’
-2.
-Explain the benefit:
+
+2. Explain the benefit:
 You will be able to check in a few seconds that your program works.
 1’
-3.
-Overview of the :
+
+3. Overview of the :
 Code example
 Task
 Summary
 1’
-4.
-Code example:
+
+4. Code example:
 Run
 Collective analysis
 15’
-5.
-Coding:
+5. Coding:
 Using the Task description
 20’
-6.
-Summary:
+
+6. Summary:
 Discuss pros and cons of testing
 Review Materials
 18’
@@ -64,7 +71,7 @@ krother@academis.eu
 
 © 2013 Magdalena & Kristian Rother
 Released under the conditions of a Creative Commons
-Attribution License 3.0.
+Attribution License 4.0.
 
 
 
