@@ -2,6 +2,9 @@
 
 ## Lesson plan for a 45' tutorial
 
+### Target audience
+Intended for programmers who have already written programs on their own but would like to learn about automated software testing.
+
 | module | topic | time |
 |--------|-------|------|
 | warm-up | Hello | 1' |

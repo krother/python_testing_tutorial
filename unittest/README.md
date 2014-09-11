@@ -10,3 +10,5 @@ without .py
 
     python -m unittest discover
 
+## test data
+patch pythonpath in a local test_data that imports ../test_data.*

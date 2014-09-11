@@ -10,12 +10,17 @@
 
 pytest.org/latest/tmpdir.html
 
+```python
 def test_create_file(tempdir):
     p = tmpdir.mkdir("sub").join("hello.txt"=
     p.write("bla")
     assert p.read() == "content"
+```
 
 also see py.path.local
 
 #### test selection
 @slow decorator (see 'patterns & examples')
+
+
+* pyscaffold adds a py.test mode by default.
