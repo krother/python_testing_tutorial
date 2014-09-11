@@ -31,60 +31,10 @@ Add a corresponding test function to the TextAnalyserTests module.
 
 Ensure that the test passes.
 
-## Lesson Plan
-1. Introduction:
-Why are we here?
-How do you know that your code works?
-How do you test your code?
-5’
-
-2. Explain the benefit:
-You will be able to check in a few seconds that your program works.
-1’
-
-3. Overview of the :
-Code example
-Task
-Summary
-1’
-
-4. Code example:
-Run
-Collective analysis
-15’
-5. Coding:
-Using the Task description
-20’
-
-6. Summary:
-Discuss pros and cons of testing
-Review Materials
-18’
-
-
-
-Feedback and comments are welcome at:
-rother.magdalena@gmail.com
-krother@academis.eu
-
-
-
-© 2013 Magdalena & Kristian Rother
-Released under the conditions of a Creative Commons
-Attribution License 4.0.
-
-
-
-https://nose.readthedocs.org/en/latest/writing_tests.html
-https://nose.readthedocs.org/en/latest/
-
-Video recordings will be in 720x576 pixels (16:9). It would be good if yourslides have the same format.
-
-
 Testing adds precision to your work.
 
 
-TASK: run minimal test example
+#### TASK: run minimal test example
 > nosetests
 
 EXPLAIN OUTPUT
@@ -123,6 +73,29 @@ EXPLAIN OUTPUT
 * test generators
 * test detection
 * test selection
+
+
+## Structure
+
+### Types of Tests
+* Unit Tests
+* Integration Tests
+* Acceptance Tests
+* Regression tests
+
+### Quality Tests
+* Write tests first
+* 1 assert per test
+* Border cases
+* Test data
+* Mock objects
+
+### Development
+* Test coverage
+* Test suite
+* Setup script
+* User Acceptance
+* Functional testing
 --------------------------
 I. Writing automatic tests in Python
 
@@ -196,17 +169,4 @@ Warm-up: Puzzle: calculating coverage
 
 TASK: refactor
 TASK: run coverage
---------------------------------
-IV. Discussion
 
-4.1 Other testing topics
-- performance
-- concurrency
-- GUI testing
-- web testing
-- random testing
-- doctests
-- py.test
-- CI
-
-4.2
