@@ -2,96 +2,99 @@
 
 Here, you find a collection of problems that can be solved by software testing.
 
-### Test a Python function
-The function **main()** in the module **word_counter.py** calculates the most frequent words in a text body. For instance:
+## 1. Unit Tests
+
+### 1.1 Test a Python function
+The function **main()** in the module **word_counter.py** calculates the number of words in a text body.
+
+For instance, the following sentence contains **four** words:
 
     The program works perfectly.
 
-Does the function calculate the number of words in the text correctly with **four**?
+Your task is to prove that the **main()** function calculates the number of words in the sentence correctly with **four**?
 
-### Fix a failing test
-The code in the test file **test_failing.py** is broken.
+### 1.2 Test proves if code is broken
+The test in the module **test_failing_code.py** fails, because there is a bug in the program **word_counter.py**.
 
-Prove that it is broken.
+Your task is to fix the code, so that the test passes.
 
-Then fix the code, so that the tests pass.
+### 1.3 Code proves if tests are broken
+The test in the module **test_failing_test.py** fails, because there is a bug in the test file.
+
+Your task is to fix the text, so that the test passes.
+
+### 1.4 Running multiple tests
+Tests can be grouped together. In the file **test_multiple.py** you find three test functions.
+
+Your task is to execute all three tests and make them pass.
+
+### 1.5 Test border cases
+High quality tests cover many different situations. The most common situations for the program **word_counter.py** include:
+
+| test case | description | example input | expected output
+|-----------|-------------|---------------|-----------------
+| empty | input is valid, but empty | "" | 0
+| minimal | smallest reasonable input | "whale" | 1
+| typical | representative input | "whale eats captain" | 3
+| invalid | input is supposed to fail | 777 | *Exception raised*
+| maximum | largest reasonable input | *Melville's entire book* | *more than 200000*
+| sanity | program recycles its own output | *TextBody A created from another TextBody B* | *A equals B*
+| nasty | difficult example | "That #~&%* program still doesn't work!" | 6
+
+Your task is to make all tests in **test_border_cases.py** pass.
+
+## 2. Integration Tests
+
+### 2.1 Mock Objects
+The function **word_report.get_top_words()** requires an instance of the class **TextBody**. You need to test the function, excluding the possibility that the **TextBody** class is buggy. To do so, you need to replace the class by a **Mock Object**, a simple placeholder.
+
+Your task is to write a test for the function **word_report.get_top_words()** that does not use the class **TextBody**.
 
 
-### Run multiple tests
-In the file **test_group.py** you find multiple test functions.  Fill in the blanks in the file. Then run the code.
+## 3. Acceptance Tests
 
-### Test a command line program
-Run and fix the command-line test example in the file **test_commandline.py**.
+### 3.1 Test a command-line application
+The program **word_counter.py** can be used from the command line with:
 
+    python word_counter.py mobydick_summary.txt
 
-### Write a new test
-The module **word_report.py** contains a function to calculate the most frequent words in a text body. Check whether the most frequent words in the file **mobydick_summary.txt** calculated by the function are:
+Command-line applications need to be tested as well. You find tests in **test_commandline.py**.
 
-| word | count |
-|------|-------|
-| of   |  34 |
-| the  |  23 |
-| is   |  21 |
-| sea  |  12 |
-| ship |  3 |
+Your task is to make sure the command-line tests pass.
 
-### Write a command-line-test
-Test whether ther program **word_report.py** calculates the five most frequent words correctly when used from the command line with the command:
+### 3.2 Test another command-line application
+The program **word_report.py** calculates most frequent words in a test file. It can be used from the command line to calculate the top five words:
 
     python word_report.py moby_dick_summary.txt 5
 
+Your task is to develop a new test for the program.
 
-### Add a feature: special characters
-Add a new feature to the **word_counter.py** program. The program should remove special characters from the text before counting words.
+### 3.3 User Acceptance
+The ultimate test for any software is whether your users are able to do what they need to get done.
 
-Prove that the new feature is working.
+Your task is to *manually* use the program **word_report.py** to find out whether Melville used *'whale'* or *'captain'* more frequently in the full text of the book *"Moby Dick"*.
 
-### Add a feature: ignore case
-Add a new feature to the **word_counter.py** program. The program should ignore the case of words, e.g. *'captain'* and *'Captain'* should be counted as the same word.
+**The User Acceptance test cannot be replaced by a machine.**
 
-### Test without dependencies
-You need to test a function that usually requires another class, but you want to exclude the possibility that the other class is buggy.
 
-Write a test for the function **word_report.get_top_words()** that does not use the class **TextBody**.
+## 4. Managing Test Data
 
-### Prepare test data
+### 4.1 A module with test data
 Create a new module **test_data.py** with a string variable that contains a sentence with lots of special characters:
 
     "That #§&%$* program still doesn't work!\nI already de-bugged it 3 times, and still numpy.array keeps raising AttributeErrors. What should I do?"
 
-Add three smaller strings to the module that cover different issues with special characters, e.g. no special characters, only special characters, many special characters in a row etc.
-
-Test the word count for each of the strings by importing them from the **test_data** module.
+Your task is to write a test for the module **word_count.py** using the string imported from the **test_data** module.
 
 
-### Test border cases
-Fill the gaps in **test_border_cases.py**. Use all alternatives that are given in the file.
+### 4.2 Preparing tests with fixtures
+Sometimes multiple tests need similar preparations. For instance, the tests in **test_word_report.py** require loading the contents of the text file **mobydick_summary.txt**.
 
-### Test Coverage
-What is the percentage of code covered by automatic tests for the modules **word_counter.py** and **word_report.py**.
+Your task is to make sure the code for loading the text file appears only once.
 
 
-### Preparations before tests
-Sometimes you need to prepare multiple tests in a similar way. For instance, a number of tests for **word_report.py** require loading the contents of the text file **mobydick_summary.txt**.
-
-Make sure the code for loading the text file appears only once.
-
-### Import test data in multiple test packages
-In a bigger software package, you have a lot of tests distributed to two packages. Both of them require the variable **MOBYDICK_SUMMARY** in **test data.py**:
-
-    tests/
-        test_a/
-            test_first.py
-        test_b/
-            test_second.py
-        test_data.py
-
-Make sure the variable **MOBYDICK_SUMMARY** is correctly imported to both test modules.
-
-### Sets of example data
-You have a list of pairs (data sample, expected result). Test all data samples in a way that makes it easy to add many more pairs (in particular, *don't* copy-paste a new test function for each data sample).
-
-The following samples apply to the text **mobydick_summary.txt**:
+### 4.3 Sets of example data
+You have a list of pairs (data sample, expected result) for the program **count_words.py** that apply to the text **mobydick_summary.txt**:
 
 | word | count |
 |------|-------|
@@ -102,20 +105,86 @@ The following samples apply to the text **mobydick_summary.txt**:
 | harpoon | 1 |
 | Ahab | 1 |
 
-When the test is running, add two more examples.
+Your task is to create a separate test for each sample. Try to figure out how more pairs can be added easily (in particular, *don't* copy-paste a new test function for each data sample).
 
-### Test selection
-Run a single test function from a larger test suite.
+### 4.4 Write a new test
+The module **word_report.py** contains a function to calculate the most frequent words in a text body. It should produce the following top five results for the book in **mobydick.txt**:
 
-### Test collection
-Run all tests you have written so far with one command from the console.
+| position | word |
+|----------|------|
+| 1. | of   |
+| 2. | the  |
+| 3. | is   |
+| 4. | sea  |
+| 5. | ship |
 
-### Integrate a test suite in a Python package
-Run all tests from **setup.py** by typing:
+Your task is to write tests for these five positions.
+
+### 4.5 Import test data in multiple test packages
+In a big software project, your tests are distributed to two packages. Both **test_first.py** and **test_second.py** require the variable **MOBYDICK_SUMMARY** from the module **test data.py**. The package structure is like this:
+
+    testss/
+        test_a/
+            __init__.py
+            test_first.py
+        test_b/
+            __init__.py
+            test_second.py
+        __init__.py
+        test_data.py
+        test_all.py
+
+Your task is to make sure that the variable **MOBYDICK_SUMMARY** is correctly imported to both test modules, so that the tests pass for all of:
+
+    tests/test_a/test_first.py
+    tests/test_b/test_second.py
+    tests/test_all.py
+
+
+## 5. Using a test suite
+
+### 5.1 Test selection
+Your task is to run only the function **test_word_counter.test_simple** from the test suite in **tests/**.
+
+### 5.2 Test collection
+Your task is to run all tests in the directory **tests/** with one command.
+
+### 5.3 Integrate a test suite in a Python package
+Your task is to make it possible to run all tests for a package by typing:
 
     python setup.py test
 
 
-### User Acceptance
-Use the program **word_counter.py** to find out whether Melville used *'whale'* or *'captain'* more frequently in the full text of the book *"Moby Dick"*.
+## 6. Test Coverage
+
+### 6.1 Calculate Test Coverage
+Your task is to calculate the percentage of code covered by automatic tests for the modules **word_counter.py** and **word_report.py**.
+
+### 6.2 Identify uncovered lines
+Your task is to find out which lines of **word_report.py** are not covered by tests.
+
+### 6.3 Increase test coverage
+Your task is to bring test coverage of **word_report.py** to 100%.
+
+
+## 7. Testing New Features
+
+### 7.1 Add new feature: special characters
+Add a new feature to the **word_counter.py** program. The program should remove special characters from the text before counting words.
+
+Your task is to prove that the new feature is working.
+
+### 7.2 Add new feature: ignore case
+Add a new feature to the **word_counter.py** program. The program should ignore the case of words, e.g. *'captain'* and *'Captain'* should be counted as the same word.
+
+Your task is to prove that the new feature is working.
+
+### 7.3 Add new feature: word separators
+The program **word_counter.py** does separate words at spaces, but not tabulators. You need to change that.
+
+The following sentence should also contain **four** words:
+
+    The\tprogram\tworks\tperfectly.
+
+Your task is to add a test for this new situation and make it work.
 

@@ -1,17 +1,27 @@
-# Prototype: Counting Words in Moby Dick
+# Theme: Counting Words in Moby Dick
+
+Herman Melville's book *“Moby Dick”* describes the epic fight between the captain of a whaling ship and a whale:
+
+## Plot synopsis
+*Captain Ahab was vicious because Moby Dick, the white whale, had bitten off his leg. So the captain set sail for a hunt. For months he was searching the sea for the white whale. The captain finally attacked the whale with a harpoon. Unimpressed, the whale devoured captain, crew and ship. The whale won.*
+
+#### Video
+[Moby Dick short synopsis on Youtube](https://www.youtube.com/watch?v=EFPhnR5CZtc)
+
+## Counting Words
+In the book, the whale wins by eating most of the other characters. **But does he also win by being mentioned more often?**
 
 ![tick marks while counting words](mobydick.png "Counting words")
 
-## The Challenge
-
-Melvilles book *“Moby Dick”* is about the epic fight between the captain of a whaling ship and a whale. **The whale prevails by eating most of the other characters. But does he also win by being mentioned more often?**
-
-You are to find out whether the whale or the captain is the most frequently mentioned character in the book. You already have a program that counts how often words occur in a text.
+You are to find out whether the whale or the captain is the most frequently mentioned character in the book. A program that counts how often words occur in a text is already there.
 
 **Does the program work correctly?**
 
 
+## Why was this example selected?
 
-### Why was this example selected?
+Three main reasons:
 
-The task easily yields very different results (e.g. because of upper/lower case, special characters etc). Therefore the program needs to be thoroughly tested.
+* The implementation is simple enough for beginners.
+* Counting words easily yields different results (because of upper/lower case, special characters etc). Therefore the program needs to be thoroughly tested.
+* You can easily change the theme to another book from [Project Gutenberg](http://www.gutenberg.org/).

@@ -1,27 +1,30 @@
 # Python Testing for Trainers
-**Build courses on automated testing in Python**
+**A Course building Toolkit**
 
 ## Contributors
 Kristian Rother, Magdalena Rother, Daniel Szoska
 
 ## Overview
-The material here allows you to prepare training courses on automated testing in Python. It contains components that you can combine to tailor your course towards
+This toolkit helps you to prepare training courses on automated testing in Python. It allows you to create courses with interchangeable
 
-* the testing framework used
-* the experience of your participants
-* the duration of the course
+* testing frameworks
+* background of participants
+* course duration
 
+Our aim is to save you preparation time while leaving room for your own ideas.
+
+Most of all, we hope you have fun in your next course.
 
 ## How to make a course
 Build a course using the following formula:
 
-    course = prototype + challenges + tools
+    course = theme + challenges + tools
 
-### The Prototype
-The prototype is the story you wrap your content in. It is the driving force that will motivate trainees to keep going. In this tutorial, Herman Melville's *Moby Dick* will be used as a prototype.
+### Theme
+The content of the course is wrapped into a *Moby Dick* theme: trainees will count frequent words in Melville's book about the white whale. The theme is the driving force that will motivate trainees to keep going.
 
 ### The Challenges
-Challenges are problem descriptions relevant to the topic of the course. They are related to real-world problems. Challenges are more general than e.g. tasks for trainees. You can adjust challenges easily to fit to a given difficulty or time frame. They are the raw material to create both *tasks* and *learning objectives*.
+Challenges are problem descriptions relevant to the topic of the course. They are related to real-world problems. Challenges are more general than e.g. tasks for trainees. You can adjust challenges to fit to a given difficulty or time frame. They are the raw material to create both *tasks* and *learning objectives*.
 
 ### The Tools
 Tools are what your trainees will use to solve the challenges. They include: Python programs, code examples, example data etc. Tools are interchangeable. The material given here works with different Python testing frameworks.

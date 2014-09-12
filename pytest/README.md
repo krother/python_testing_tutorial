@@ -22,5 +22,6 @@ also see py.path.local
 #### test selection
 @slow decorator (see 'patterns & examples')
 
+#### re-run failed tests
 
 * pyscaffold adds a py.test mode by default.

@@ -2,7 +2,7 @@
 
 * [Python Testing for Trainers](README.md)
 * [Challenges](tasks/README.md)
-* [Prototype: Counting Words in Moby Dick](counting_words_with_moby_dick/README.md)
+* [Theme: Counting Words in Moby Dick](counting_words_with_moby_dick/README.md)
 * [Lesson Plans](instructions_for_trainers/lesson_plan.md)
 * [Basics](basics/README.md)
 * [unittest](unittest/README.md)
