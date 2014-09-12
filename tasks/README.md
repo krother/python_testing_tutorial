@@ -2,6 +2,16 @@
 
 Here, you find a collection of problems that can be solved by software testing.
 
+### Contents
+
+1. Unit Tests
+2. Integration Tests
+3. Acceptance Tests
+4. Test Data
+5. Test Suites
+6. Test Coverage
+7. Testing New Features
+
 ## 1. Unit Tests
 
 ### 1.1 Test a Python function
@@ -77,7 +87,7 @@ Your task is to *manually* use the program **word_report.py** to find out whethe
 **The User Acceptance test cannot be replaced by a machine.**
 
 
-## 4. Managing Test Data
+## 4. Test Data
 
 ### 4.1 A module with test data
 Create a new module **test_data.py** with a string variable that contains a sentence with lots of special characters:
@@ -141,7 +151,7 @@ Your task is to make sure that the variable **MOBYDICK_SUMMARY** is correctly im
     tests/test_all.py
 
 
-## 5. Using a test suite
+## 5. Test Suites
 
 ### 5.1 Test selection
 Your task is to run only the function **test_word_counter.test_simple** from the test suite in **tests/**.

@@ -49,3 +49,9 @@ Create .noserc in your home directory containing:
     nosetests --with-coverage --cover-html
     cd cover
     firefox index.html
+
+## List all assert functions
+
+    import nose.tools
+    print dir(nose.tools)
+

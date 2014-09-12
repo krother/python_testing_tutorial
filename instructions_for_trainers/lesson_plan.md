@@ -1,51 +1,56 @@
 # Lesson Plans
 
+## Lesson plan for a 180' tutorial
+A similar plan was used at a training at EuroPython. The audience consisted of about 60 Python programmers, including beginners and seasoned developers.
+
+| module | topic | time |
+|--------|-------|------|
+| warm-up | introduce the theme | 5' |
+| warm-up | icebreaker activity | 5' |
+| warm-up | announce training objectives | 5' |
+
+| part 1  | Writing automatic tests in Python | 45’ |
+|---------|-----------------------------------|-----|
+| warm-up | methods in the unittest module | 5’ |
+| new content | presentation: Unit Tests, Integration Tests, and Acceptance Tests | 15’ |
+| application | challenges 1.1 - 1.5 | 20’ |
+| wrap-up | Q & A | 5’ |
+
+| part 2  | Integration and Acceptance Tests | 45’ |
+|---------|-----------------------------------|-----|
+| warm-up | quiz on test strategies | 10' |
+| new content | presentation on Test-Driven-Development | 10’ |
+| application | challenges 2.1 - 3.3 | 20' |
+| wrap-up | Q & A | 5’ |
+
+**break (10’)**
+
+| part 3  | Tests data and test suites | 45’ |
+|---------|-----------------------------------|-----|
+| warm-up | multiple choice questions | 10' |
+| new content | presentation on test suites | 10’ |
+| application | exercises 4, 5, 6 | 20' |
+| wrap-up | Q & A | 5’ |
+
+| summary  | Benefits of testing | 25’ |
+|---------|-----------------------------------|-----|
+| transfer | group discussion on benefits of testing | 20’ |
+| finishing | summary | 4’ |
+| finishing | goodbye | 1' |
+
+
 ## Lesson plan for a 45' tutorial
 
-### Target audience
 Intended for programmers who have already written programs on their own but would like to learn about automated software testing.
 
 | module | topic | time |
 |--------|-------|------|
-| warm-up | Hello | 1' |
-| warm-up | Question: How do you know that your code works? | 4' |
-| motivation | Explain the benefit: You will be able to check in a few seconds that your program works. | 1’ |
-| new content | Overview of the code example | 1’ |
-| new content | Run the code example; collective analysis | 15' |
-| application | Write code using the task description | 20' |
-| wrap-up | Discuss pros and cons of testing | 15' |
-| wrap-up | Point to materials | 2' |
-| wrap-up | Goodbye | 1' |
-
-
-## Lesson plan for a 180' tutorial
-
- Warm-up (10')
-Icebreaker activity (5’)
-Overview: Objectives of the training (5’)
-not: testing web apps.
-
-### Part 1: Writing automatic tests in Python (45’)
-Warm-up exercise: methods in the unittest module (5’)
-Presentation: Unit Tests, Integration Tests, and Acceptance Tests (15’)
-Exercise: Write one test of each kind (20’)
-Q & A (5’)
-
-### Part 2: Test-Driven-Development (45’)
-Warm-up exercise: quiz on test strategies (10’)
-Presentation on Test-Driven-Development (10’)
-Exercise: Write a test first, then implement (20’)
-Q & A (5’)
-break (10’)
-
-### Part 3: Tests during refactoring (45’)
-Presentation on refactoring strategies (10’)
-Text puzzle: How to calculate test coverage with figleaf (5’)
-Exercise: Combining multiple test modules to a test suite (10’)
-Exercise: Improving test coverage and refactor (15’)
-Q & A (5’)
-
-### Summary: Benefits of testing (25’)
-3-4 Groups discuss a question on benefits of testing (10’)
-Groups present their results (10’)
-Summary & Wrap-up (5’)
+| warm-up | hello | 1' |
+| warm-up | question: How do you know that your code works? | 4' |
+| motivation | explain the benefit: You will be able to check in a few seconds that your program works. | 1’ |
+| new content | overview of the code example | 1’ |
+| new content | run the code example; collective analysis | 15' |
+| application | write code using the task description | 20' |
+| wrap-up | discuss pros and cons of testing | 15' |
+| wrap-up | point to materials | 2' |
+| wrap-up | goodbye | 1' |

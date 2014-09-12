@@ -11,14 +11,15 @@ This toolkit helps you to prepare training courses on automated testing in Pytho
 * background of participants
 * course duration
 
-Our aim is to save you preparation time while leaving room for your own ideas.
+Our aim is to save you preparation time while leaving room for your own ideas. Most of all, we hope you have fun in your next course.
 
-Most of all, we hope you have fun in your next course.
+### How to use this toolkit
 
-## How to make a course
-Build a course using the following formula:
-
-    course = theme + challenges + tools
+1. Pick some challenges
+2. Decide for a test framework
+3. Copy the material in moby_dick/ for your participants
+4. Copy the material for your test framework for your course participants
+5. Pick exercise material you want to present
 
 ### Theme
 The content of the course is wrapped into a *Moby Dick* theme: trainees will count frequent words in Melville's book about the white whale. The theme is the driving force that will motivate trainees to keep going.
@@ -32,8 +33,6 @@ Tools are what your trainees will use to solve the challenges. They include: Pyt
 ### Learning Objective
 During the tutorial participants will implement automatic test functions that pass for the Moby Dick example. using the unittest module within 20'.
 
-### Duration
-one hour for a group of experienced developers. For beginners, you may double or triple that time.
 
 ### Material
 * Handout “Introduction to the unittest Framework in Python”
@@ -52,141 +51,12 @@ Ensure that the test passes.
 Testing adds precision to your work.
 
 
-#### TASK: run minimal test example
-> nosetests
-
-EXPLAIN OUTPUT
-
-## Structure
-
 ### Purposes of Testing
 * Write code
 * debug
 * refactor
 * maintain software
 * teamwork
-
-### Testing Strategies
-
-#### Types of tests
-* Unit Tests
-* Acceptance Tests
-* Integration Tests
-* Regression Tests
-
-#### Test tools
-* Coverate
-* Mock Objects
-* test suite
-* TDD
-* test data
-* 1 assert per test
-* border cases
-
-### 7 Features of nose
-* test functions
-* TestCase subclasses
-* asserts from nose.tools
-* fixtures setUp() tearDown()
-* test generators
-* test detection
-* test selection
-
-
-## Structure
-
-### Types of Tests
-* Unit Tests
-* Integration Tests
-* Acceptance Tests
-* Regression tests
-
-### Quality Tests
-* Write tests first
-* 1 assert per test
-* Border cases
-* Test data
-* Mock objects
-
-### Development
-* Test coverage
-* Test suite
-* Setup script
-* User Acceptance
-* Functional testing
---------------------------
-I. Writing automatic tests in Python
-
-Warm-up exercise: run example test
-
-1.1 nosetests
-- nosetests
-- -v
-- explain output
-- test functions (EXAMPLE)
-- assert, nose.tools (EXAMPLE)
-
-1.2 Unit Testing
-- testing in isolation
-- TestCase subclasses (EXAMPLE)
-- self.assert statements
-
-1.3 Integration Tests
-- two together (EXAMPLE)
-
-1.4 Acceptance Tests
-- disambiguation: vs. Web tests, User acceptance tests, manual tests
-- command line tests (EXAMPLE)
-
-TASKS:
-- TASK: write a Unit Test
-- TASK: write a Integration Test
-- TASK: write an Acceptance Test
-
-----------------------------
-II. Test-Driven Development
-
-2.1 TDD
-- What is TDD
-- 1 assert per test
-- when all tests pass, stop coding
-- have test data
-- what kind of tests to write?
-
-2.2 Border cases
-- empty, fail, smallest, biggest, nasty, sanity (EXAMPLE)
-
-2.3 Fixtures
-- in modules
-- in classes (EXAMPLE)
-
-2.4 Test generators
-- generators (EXAMPLE)
-
-TASK: Write test first
-----------------------------
-III. Tests during refactoring
-
-Warm-up: Puzzle: calculating coverage
-
-3.1 Refactoring
-- example strategy
-- tests need structure, too
-- mock objects (EXAMPLE)
-
-3.2 Test detection
-- test detection
-- test selection
-
-3.3 Building a Test Suite
-- test suite
-- setup script
-
-3.4 Coverage
-- run coverage
-
-TASK: refactor
-TASK: run coverage
 
 
 ## Copyright
