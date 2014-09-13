@@ -2,6 +2,8 @@
 
 **"UNTESTED == BROKEN"** <br> Schlomo Shapiro, EuroPython 2014
 
+**"Code without tests is broken by design”** <br> Jacob Kaplan-Moss
+
 **"Everyone knows that debugging is twice as hard as writing a program in the first place. So if you're as clever as you can be when you write it, how will you ever debug it?"** <br> Brian Kernighan, "The Elements of Programming Style", 2nd edition, chapter 2
 
 **"Pay attention to zeros. If there is a zero, someone will divide by it."** <br> Cem Kaner

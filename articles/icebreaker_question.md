@@ -14,4 +14,4 @@ How many words are in the next sentence?
 
 The answer to this question is less obvious. It depends on how precisely the special characters are interpreted.
 
-Making sure you have a precise answer is the essence software testing.
+Making sure you have a precise answer is the essence of software testing.

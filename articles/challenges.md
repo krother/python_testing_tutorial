@@ -1,6 +1,6 @@
 # Challenges
 
-Here, you find a collection of problems that can be solved by software testing.
+Here, you find a collection of problems that can be solved by software testing. Pick the ones that fit the needs of your trainees.
 
 ### Contents
 
@@ -11,6 +11,8 @@ Here, you find a collection of problems that can be solved by software testing.
 5. Test Suites
 6. Test Coverage
 7. Testing New Features
+
+----
 
 ## 1. Unit Tests
 
@@ -53,6 +55,8 @@ High quality tests cover many different situations. The most common situations f
 
 Your task is to make all tests in **test_border_cases.py** pass.
 
+----
+
 ## 2. Integration Tests
 
 ### 2.1 Mock Objects
@@ -60,6 +64,8 @@ The function **word_report.get_top_words()** requires an instance of the class *
 
 Your task is to write a test for the function **word_report.get_top_words()** that does not use the class **TextBody**.
 
+
+----
 
 ## 3. Acceptance Tests
 
@@ -86,6 +92,8 @@ Your task is to *manually* use the program **word_report.py** to find out whethe
 
 **The User Acceptance test cannot be replaced by a machine.**
 
+
+----
 
 ## 4. Test Data
 
@@ -117,7 +125,7 @@ You have a list of pairs (data sample, expected result) for the program **count_
 
 Your task is to create a separate test for each sample. Try to figure out how more pairs can be added easily (in particular, *don't* copy-paste a new test function for each data sample).
 
-### 4.4 Write a new test
+### 4.4 Write a test with sample data
 The module **word_report.py** contains a function to calculate the most frequent words in a text body. It should produce the following top five results for the book in **mobydick.txt**:
 
 | position | word |
@@ -151,6 +159,8 @@ Your task is to make sure that the variable **MOBYDICK_SUMMARY** is correctly im
     tests/test_all.py
 
 
+----
+
 ## 5. Test Suites
 
 ### 5.1 Test selection
@@ -165,6 +175,8 @@ Your task is to make it possible to run all tests for a package by typing:
     python setup.py test
 
 
+----
+
 ## 6. Test Coverage
 
 ### 6.1 Calculate Test Coverage
@@ -176,6 +188,8 @@ Your task is to find out which lines of **word_report.py** are not covered by te
 ### 6.3 Increase test coverage
 Your task is to bring test coverage of **word_report.py** to 100%.
 
+
+----
 
 ## 7. Testing New Features
 

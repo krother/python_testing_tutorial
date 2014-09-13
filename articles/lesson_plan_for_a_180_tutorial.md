@@ -1,11 +1,9 @@
-# Lesson Plans
-
-## Lesson plan for a 180' tutorial
+# Lesson plan for a 180' tutorial
 A similar plan was used at a training at EuroPython. The audience consisted of about 60 Python programmers, including beginners and seasoned developers.
 
 | module | topic | time |
 |--------|-------|------|
-| warm-up | introduce the theme | 5' |
+| warm-up | introduce the Moby Dick theme | 5' |
 | warm-up | icebreaker activity | 5' |
 | warm-up | announce training objectives | 5' |
 
@@ -38,19 +36,3 @@ A similar plan was used at a training at EuroPython. The audience consisted of a
 | finishing | summary | 4’ |
 | finishing | goodbye | 1' |
 
-
-## Lesson plan for a 45' tutorial
-
-Intended for programmers who have already written programs on their own but would like to learn about automated software testing.
-
-| module | topic | time |
-|--------|-------|------|
-| warm-up | hello | 1' |
-| warm-up | question: How do you know that your code works? | 4' |
-| motivation | explain the benefit: You will be able to check in a few seconds that your program works. | 1’ |
-| new content | overview of the code example | 1’ |
-| new content | run the code example; collective analysis | 15' |
-| application | write code using the task description | 20' |
-| wrap-up | discuss pros and cons of testing | 15' |
-| wrap-up | point to materials | 2' |
-| wrap-up | goodbye | 1' |
