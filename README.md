@@ -1,5 +1,5 @@
 # Python Testing for Trainers
-**A Course building Toolkit**
+**A Course Building Toolkit**
 
 ## Contributors
 Kristian Rother, Magdalena Rother, Daniel Szoska
@@ -15,6 +15,8 @@ Our aim is to save you preparation time while leaving room for your own ideas. M
 
 ## How to run a course using this toolkit
 
+All material can be retrieved from [https://github.com/krother/python_testing_tutorial](https://github.com/krother/python_testing_tutorial).
+
 1. Introduce the Moby Dick Theme to your trainees
 2. Copy the code in *code/mobydick* and *code/test_your_framework*.
 3. Set the PYTHONPATH environment variable, so that you can do
@@ -25,7 +27,7 @@ Our aim is to save you preparation time while leaving room for your own ideas. M
 5. Share the capter "Reference" on your test framework with your trainees.
 6. Start coding!
 
-![Moby Dick](mobydick.png)
+![Moby Dick](images/mobydick.png)
 
 ## Copyright
 

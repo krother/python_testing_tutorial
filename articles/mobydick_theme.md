@@ -3,7 +3,7 @@
 ## Moby Dick: Plot synopsis
 *Captain Ahab was vicious because Moby Dick, the white whale, had bitten off his leg. So the captain set sail for a hunt. For months he was searching the sea for the white whale. The captain finally attacked the whale with a harpoon. Unimpressed, the whale devoured captain, crew and ship. The whale won.*
 
-![tick marks while counting words](counting470.png "Counting words")
+![tick marks while counting words](../images/counting470.png "Counting words")
 
 #### Video
 [Moby Dick short synopsis on Youtube](https://www.youtube.com/watch?v=EFPhnR5CZtc)

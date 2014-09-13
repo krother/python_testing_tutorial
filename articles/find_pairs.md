@@ -1,18 +1,16 @@
 # Find Pairs
 
-The following exercise can be conducted as a warm-up activity, as part of a presentation or for repeating towards the end of a tutorial.
-
-## Testing Strategies
+With this exercise, you can conduct a warm-up activity, involve trainees during your a presentation, or repeat towards the end of your tutorial. Your trainees will **match test strategies and their descriptions**.
 
 | test strategy | description |
 |---------------|-------------|
-| Unit Test | |
-| Integration Test |  |
-| Acceptance Test  |  |
-| Fixture |  |
-| Test suite |  |
-| Test data |  |
-| Test coverage |  |
+| Unit Test | tests a single module, class or function |
+| Integration Test | tests whether two components interact |
+| Acceptance Test  | tests functionality via the user interface |
+| Fixture | prepare tests and clean up afterwards |
+| Test suite | collection of tests for a software package |
+| Test data | files and examples that help with testing |
+| Test coverage | relative amount of code tested |
 
 
 ## How to conduct this exercise?
