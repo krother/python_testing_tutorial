@@ -4,8 +4,11 @@
 #
 
 from nose.tools import assert_equal, assert_raises, assert_greater, assert_list_equal
-from word_counter import TextBody
+from mobydick import TextBody
 
+#
+# TASK: insert the assert_functions, so that each of them is used at least once
+#
 def test_empty():
     """Empty input works"""
     text = TextBody('')
@@ -35,7 +38,8 @@ def test_sanity():
 
 def test_nasty():
     """Ugly data example works."""
-    text = TextBody("That #~&%* program still doesn't work!\nI already de-bugged it 3 times, and still numpy.array keeps throwing AttributeErrors. What should I do?")
+    text = TextBody("""That #~&%* program still doesn't work!
+I already de-bugged it 3 times, and still numpy.array keeps throwing AttributeErrors.
+What should I do?""")
     assert_(text.word_number, 22)
-
 
