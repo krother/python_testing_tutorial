@@ -19,6 +19,12 @@ def test_count_the(self):
     """Count word in a longer text"""
     self.assertEqual(self.counter.count_word("the"), 6)
 
+def test_word_number_text():
+    """Count words in a text paragraph"""
+    text = TextBody(MOBYDICK_SUMMARY)
+    assert_equal(text.word_number, 54)
+
+
 def tearDown(self):
     """Clean up after a test has passed or failed."""
     pass
