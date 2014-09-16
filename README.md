@@ -24,7 +24,7 @@ All material can be retrieved from [https://github.com/krother/python_testing_tu
     import mobydick
 
 4. Share the chapter "Challenges" with your trainees.
-5. Share the capter "Reference" on your test framework with your trainees.
+5. Share the chapter "Reference" on your test framework with your trainees.
 6. Start coding!
 
 ![Moby Dick](images/mobydick.png)
