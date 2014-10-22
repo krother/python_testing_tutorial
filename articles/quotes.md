@@ -10,6 +10,6 @@
 
 **"If you don’t care about quality, you can't meet any other requirement”** <br> Gerald M. Weinberg
 
-**"Software testing proves the existing of bugs not their absence."** <br> Anonymous
+**"Testing shows the presence, not the absence of bugs."** <br> Edsger W. Dijkstra
 
 **"... we have as many testers as we have developers. And testers spend all their time testing, and developers spend half their time testing. We're more of a testing, a quality software organization than we're a software organization."** <br> Bill Gates on trustworthy computing (Information Week, May 2002)
