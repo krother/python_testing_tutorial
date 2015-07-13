@@ -1,10 +1,13 @@
 # Lesson Plan for a 45' tutorial
 
-Intended for programmers who have already written programs on their own but would like to learn about automated software testing.
+### Target audience
 
+Programmers who have already written programs on their own but would like to learn about automated software testing.
 
-#### Learning Objective
+### Learning Objective
 During the tutorial participants will implement automatic test functions that pass for the Moby Dick example. using the unittest module within 20'.
+
+### Lesson Plan
 
 | module | topic | time |
 |--------|-------|------|
@@ -17,3 +20,4 @@ During the tutorial participants will implement automatic test functions that pa
 | wrap-up | discuss pros and cons of testing | 15' |
 | wrap-up | point to materials | 2' |
 | wrap-up | goodbye | 1' |
+

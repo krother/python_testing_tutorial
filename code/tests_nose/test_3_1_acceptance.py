@@ -6,8 +6,8 @@
 from unittest import TestCase
 import os
 
-PROGRAM = 'word_counter.py'
-TEXT_FILE = 'mobydick_summary.txt'
+PROGRAM = '../mobydick/word_counter.py'
+TEXT_FILE = '../test_data/mobydick_summary.txt'
 OUTPUT = 'out.tmp'
 
 class WordCounterAcceptanceTests(TestCase):
