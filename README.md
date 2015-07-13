@@ -4,6 +4,11 @@
 ## Contributors
 Kristian Rother, Magdalena Rother, Daniel Szoska
 
+### Latest version of this book
+
+* Complete material (book + code examples): [https://github.com/krother/python_testing_tutorial](https://github.com/krother/python_testing_tutorial).
+* PDF and EPUB versions: [https://www.gitbook.io/book/krother/testing-python-for-trainers](https://www.gitbook.io/book/krother/testing-python-for-trainers)
+
 ## Overview
 This toolkit helps you to prepare training courses on automated testing in Python. It allows you to create courses with interchangeable
 
@@ -14,8 +19,6 @@ This toolkit helps you to prepare training courses on automated testing in Pytho
 Our aim is to save you preparation time while leaving room for your own ideas. Most of all, we hope you have fun in your next course.
 
 ## How to run a course using this toolkit
-
-All material can be retrieved from [https://github.com/krother/python_testing_tutorial](https://github.com/krother/python_testing_tutorial).
 
 1. Introduce the Moby Dick Theme to your trainees
 2. Copy the code in *code/mobydick* and *code/test_your_framework*.
