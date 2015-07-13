@@ -19,7 +19,8 @@ class TextBody:
         """Returns number of words in the text."""
         return len(self.words)   
 
-    def get_average_word_length(self):
+    @property
+    def average_word_length(self):
         """Returns the average word length as a float."""
         lengths = map(len, self.text.split())
         return sum(lengths) / len(lengths)
@@ -55,7 +56,7 @@ if __name__ == '__main__':
 
 
 if __name__ == '__main__':
-    print('usage:\npython word_counter.py <filename> <number>')
+    print('usage:\npython word_counter.py <filename> <number_top_words>')
     textfile = sys.argv[1]
     number = int(sys.argv[2])
     text = TextBody(open(textfile).read())
