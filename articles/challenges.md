@@ -1,6 +1,6 @@
 # Challenges
 
-Here, you find a collection of problems that can be solved by software testing. Pick the ones that fit the needs of your trainees.
+Here, you find a collection of problems that can be solved by software testing.
 
 ### Contents
 
@@ -69,19 +69,14 @@ Your task is to execute all of the above tests with one command and make them pa
 
 ----
 
-## 2. Integration Tests
+## 2. Other Testing Techniques
 
-### 2.1 Integrating two modules
-pass
-
-### 2.2 Mock Objects
+### 2.1 Mock Objects
 The function **word_report.get_top_words()** requires an instance of the class **TextBody**. You need to test the function, excluding the possibility that the **TextBody** class is buggy. To do so, you need to replace the class by a **Mock Object**, a simple placeholder.
 
 Your task is to write a test for the function **word_counter.get_top_words()** that does not use the class **TextBody**.
 
-----
-
-## 3. Acceptance Tests
+## 3. Other Testing Techniques
 
 ### 3.1 Test a command-line application
 The program **word_counter.py** can be used from the command line to calculate the most frequent words with:

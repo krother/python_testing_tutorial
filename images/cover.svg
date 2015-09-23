@@ -72,9 +72,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.24748737"
-     inkscape:cx="-1552.3122"
-     inkscape:cy="895.30155"
+     inkscape:zoom="0.35"
+     inkscape:cx="-1153.9354"
+     inkscape:cy="454.24036"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -479,23 +479,7 @@
        inkscape:export-filename="/home/krother/Desktop/Academis_ebooks/Python_Testing_for_Trainers/cover.png"
        inkscape:export-xdpi="96.440002"
        inkscape:export-ydpi="96.440002" />
-    <flowRoot
-       xml:space="preserve"
-       id="flowRoot3867"
-       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#80b940;fill-opacity:1;stroke:none;font-family:Sans"
-       transform="translate(-831.91146,60.609153)"
-       inkscape:export-filename="/home/krother/Desktop/Academis_ebooks/Python_Testing_for_Trainers/cover.png"
-       inkscape:export-xdpi="96.440002"
-       inkscape:export-ydpi="96.440002"><flowRegion
-         id="flowRegion3869"><rect
-           style="fill:#80b940;fill-opacity:1"
-           id="rect3871"
-           width="711.1474"
-           height="74.751289"
-           x="96.974648"
-           y="773.56006" /></flowRegion><flowPara
-         id="flowPara3873"
-         style="font-size:36px;fill:#000000;fill-opacity:1;stroke:#000000">featuring Melville's Moby Dick</flowPara></flowRoot>    <image
+    <image
        transform="translate(-783.78701,6.123926)"
        width="1500"
        height="157"
@@ -558,22 +542,6 @@
        inkscape:export-xdpi="96.440002"
        inkscape:export-ydpi="96.440002" />
     <flowRoot
-       transform="matrix(3.6044934,0,0,3.6044934,-1856.4874,-866.05406)"
-       style="font-size:40px;font-style:normal;font-weight:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       id="flowRoot3171"
-       xml:space="preserve"
-       inkscape:export-filename="/home/krother/Desktop/Academis_ebooks/Python_Testing_for_Trainers/cover.png"
-       inkscape:export-xdpi="96.440002"
-       inkscape:export-ydpi="96.440002"><flowRegion
-         id="flowRegion3173"><rect
-           y="496.77829"
-           x="311.12698"
-           height="37.230507"
-           width="192.96219"
-           id="rect3175"
-           style="text-align:start;text-anchor:start" /></flowRegion><flowPara
-         id="flowPara3179"
-         style="font-size:19.42020416px;font-weight:bold;text-align:start;text-anchor:start;-inkscape-font-specification:Sans Bold">trainers guide</flowPara></flowRoot>    <flowRoot
        inkscape:export-ydpi="96.440002"
        inkscape:export-xdpi="96.440002"
        inkscape:export-filename="/home/krother/Desktop/Academis_ebooks/Python_Testing_for_Trainers/cover.png"
@@ -589,7 +557,7 @@
            x="311.12698"
            y="496.77829" /></flowRegion><flowPara
          id="flowPara3124"
-         style="font-size:48.37656784px;font-style:oblique;font-weight:bold;text-align:start;text-anchor:start;-inkscape-font-specification:Sans Bold Oblique">for Trainers</flowPara></flowRoot>    <rect
+         style="font-size:48.37656784px;font-style:oblique;font-weight:bold;text-align:start;text-anchor:start;-inkscape-font-specification:Sans Bold Oblique">Tutorial</flowPara></flowRoot>    <rect
        inkscape:export-ydpi="150.66118"
        inkscape:export-xdpi="150.66118"
        inkscape:export-filename="/home/krother/Desktop/Testing_Python_with_nose/cover.png"
@@ -869,5 +837,21 @@
          x="869.58533"
          y="-526.47681" />
     </g>
-  </g>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3867"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#80b940;fill-opacity:1;stroke:none;font-family:Sans"
+       transform="translate(-832.7686,166.03773)"
+       inkscape:export-filename="/home/krother/Desktop/Academis_ebooks/Python_Testing_for_Trainers/cover.png"
+       inkscape:export-xdpi="96.440002"
+       inkscape:export-ydpi="96.440002"><flowRegion
+         id="flowRegion3869"><rect
+           style="fill:#80b940;fill-opacity:1"
+           id="rect3871"
+           width="659.71887"
+           height="80.465553"
+           x="96.974648"
+           y="773.56006" /></flowRegion><flowPara
+         id="flowPara3873"
+         style="font-size:36px;font-weight:bold;fill:#000000;fill-opacity:1;stroke:#000000">featuring Melville's Moby Dick</flowPara></flowRoot>  </g>
 </svg>

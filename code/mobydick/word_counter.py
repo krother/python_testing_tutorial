@@ -27,8 +27,8 @@ class TextBody:
 
 
 def count_word(text, word):
-        """Counts a single word."""
-        number = self.text.words.count(word)
+    """Counts a single word."""
+    number = text.words.count(word)
 
 
 
@@ -44,15 +44,6 @@ def get_top_words(text, n):
     data.sort()
     data.reverse()
     return data[:n]
-
-
-if __name__ == '__main__':
-    text = open(sys.argv[1]).read()
-    text = TextBody(text)
-    word = sys.argv[2]
-    counter = WordCounter(text)
-    count = counter.count_word(word)
-    print("%s:\t%i" % (word, count))
 
 
 if __name__ == '__main__':
