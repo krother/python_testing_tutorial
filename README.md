@@ -6,7 +6,7 @@ Kristian Rother, Magdalena Rother, Daniel Szoska
 ### Latest version of this book
 
 * Complete material (book + code examples): [https://github.com/krother/python_testing_tutorial](https://github.com/krother/python_testing_tutorial).
-* PDF and EPUB versions: [https://www.gitbook.io/book/krother/testing-python-for-trainers](https://www.gitbook.io/book/krother/testing-python-for-trainers)
+* PDF and EPUB versions: [https://www.gitbook.io/book/krother/python-testing-tutorial](https://www.gitbook.io/book/krother/python-testing-tutorial)
 
 ## Overview
 
