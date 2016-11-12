@@ -1,5 +1,7 @@
 # Quotes
 
+**"Call me Ishmael"** <br> Herman Melville, Moby Dick 1851
+
 **"UNTESTED == BROKEN"** <br> Schlomo Shapiro, EuroPython 2014
 
 **"Code without tests is broken by design”** <br> Jacob Kaplan-Moss
@@ -12,4 +14,4 @@
 
 **"Testing shows the presence, not the absence of bugs."** <br> Edsger W. Dijkstra
 
-**"... we have as many testers as we have developers. And testers spend all their time testing, and developers spend half their time testing. We're more of a testing, a quality software organization than we're a software organization."** <br> Bill Gates on trustworthy computing (Information Week, May 2002)
+**"... we have as many testers as we have developers. And testers spend all their time testing, and developers spend half their time testing. We're more of a testing, a quality software organization than we're a software organization."** <br> Bill Gates (Information Week, May 2002)

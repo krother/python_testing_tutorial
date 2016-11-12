@@ -1,2 +1,2 @@
 
-from word_counter import TextBody
+from .word_counter import TextBody
