@@ -2,7 +2,7 @@
 
 import sys
 
-class TextBody:
+class TextCorpus:
 
     def __init__(self, text):
         if type(text) != str:
@@ -15,7 +15,7 @@ class TextBody:
         return self.text.split()
 
     @property
-    def word_number(self):
+    def n_words(self):
         """Returns number of words in the text."""
         return len(self.words)   
 
@@ -50,7 +50,7 @@ if __name__ == '__main__':
     print('usage:\npython word_counter.py <filename> <number_top_words>')
     textfile = sys.argv[1]
     number = int(sys.argv[2])
-    text = TextBody(open(textfile).read())
+    text = TextCorpus(open(textfile).read())
     for count, word in get_top_words(text, number):
         print(word, count)
 

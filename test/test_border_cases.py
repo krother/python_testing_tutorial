@@ -1,60 +1,51 @@
-#!/usr/bin/env python
 """
 Example of border cases
 
-TASK: insert the following assert_functions, so that each of them 
-is used at least once:
-
-    assertEqual, assertRaises, assertGreater, assertList_equal
-
+TASK: fill in the gaps, so that the assertions work
 """
 
-from mobydick import TextBody
-from unittest import TestCase, main
+from mobydick import TextCorpus
+import pytest
 
 
-class BorderCaseTests(TestCase):
+class TestBorderCases:
 
     def test_empty(self):
         """Empty input works"""
-        text = TextBody('')
-        self.assert_x(text.word_number, 0)
+        text = TextCorpus('')
+        assert text.n_words == _____
 
     def test_smallest(self):
         """Minimal string works."""
-        text = TextBody("whale")
-        self.assert_x(text.words, ['whale'])
+        text = TextCorpus("whale")
+        _____ text.words == ['whale']
         
     def test_typical(self):
         """Representative small input works."""
-        text = TextBody("whale eats captain")
-        self.assert_x(text.words, ['whale', 'eats', 'captain'])
+        text = TextCorpus("whale eats captain")
+        assert text.words == [_____, 'eats', 'captain']
 
     def test_wrong_input(self):
         """Non-string doesn't work"""
-        self.assert_x(TypeError, TextBody, 777)
+        with pytest.raises(_____) as e_info:
+            TextCorpus(777)
 
     def test_biggest(self):
         """An entire book works."""
-        text = TextBody(open('moby_dick.txt').read())
-        self.assert_x(text.word_number, 200000)
+        text = TextCorpus(open('mobydick_full.txt').read())
+        assert text._____ > 200000
 
     def test_sanity(self):
         """Feed output of a class into itself"""
-        text_a = TextBody(open('moby_dick.txt').read())
-        words_before = text_a.words[:]
-        copy = ' '.join(text_a.words)
-        text_b = TextBody(copy)
-        self.assert_x(words_before, text_b.words)
+        text = TextCorpus(open('mobydick_full.txt').read())
+        words_before = list(text.words)
+        copy = ' '.join(text.words)
+        text_after = TextCorpus(copy)
+        assert words_before == _____
 
     def test_nasty(self):
         """Ugly data example works."""
-        text = TextBody("""That #~&%* program still doesn't work!
+        text = TextCorpus("""That #~&%* program still doesn't work!
     I already de-bugged it 3 times, and still numpy.array keeps throwing AttributeErrors.
     What should I do?""")
-        self.assert_x(text.word_number, 22)
-
-
-if __name__ == '__main__':
-    main()
-
+        assert text.n_words == _____

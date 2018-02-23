@@ -1,19 +1,13 @@
-#!/usr/bin/env python
 """
 Example of a Unit Test
 """
 
-from mobydick import TextBody
-from unittest import TestCase, main
+from mobydick import TextCorpus
 
-class MobyDickUnitTest(TestCase):
 
-    def test_word_number_two(self):
+class TestMobyDick:
+
+    def test_word_number(self):
         """Count words in a short sentence"""
-        text = TextBody("Call me Ishmael")
-        self.assertEqual(text.word_number, 3)
-
-
-if __name__ == '__main__':
-    main()
-
+        text = TextCorpus("Call me Ishmael")
+        assert text.n_words == 3

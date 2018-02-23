@@ -1,21 +1,14 @@
-
-#!/usr/bin/env python
 """
 Example of test that fails because of a broken test.
 """
 
-from mobydick import TextBody
-from unittest import TestCase, main
+from mobydick import TextCorpus
 
-class MobyDickBrokenTest(TestCase):
+
+class TestMobyDickBrokenTest:
 
     def test_words(self):
         """The word attribute is a list"""
         words = ['my', 'name', 'is', 'ishmael']
-        text = TextBody('Call me Ishmael')
-        self.assertListEqual(text.words, words)
-
-
-if __name__ == '__main__':
-    main()
-
+        text = TextCorpus('Call me Ishmael')
+        assert text.words == words
