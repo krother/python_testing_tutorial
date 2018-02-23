@@ -1,14 +1,12 @@
-#!/usr/bin/env python
 #
 # Example of a class derived from TestCase 
 #
 
-from unittest import TestCase
 from word_counter import TextBody
 
 MOBYDICK_SUMMARY = open('mobydick_summary.txt').read()
 
-class AverageWordLengthTests(TestCase):
+class TestAverageWordLengthTests:
     """Tests for word_counter module."""
 
     def test_average_words(self):

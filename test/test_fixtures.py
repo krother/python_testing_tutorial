@@ -1,9 +1,7 @@
-#!/usr/bin/env python
 #
 # example of tests with fixtures
 #
 
-from unittest import main, TestCase
 from mobydick.word_counter import TextBody
 
 
@@ -28,7 +26,3 @@ def test_word_number_text():
 def tearDown(self):
     """Clean up after a test has passed or failed."""
     pass
-
-
-
-

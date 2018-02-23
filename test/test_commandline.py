@@ -1,9 +1,7 @@
-#!/usr/bin/env python
 """
 Example for testing a command-line app
 """
 
-from unittest import TestCase, main
 import os
 
 PROGRAM = '../mobydick/word_counter.py'
@@ -11,7 +9,7 @@ TEXT_FILE = '../test_data/mobydick_summary.txt'
 OUTPUT = 'out.tmp'
 
 
-class WordCounterAcceptanceTests(TestCase):
+class TestWordCounterAcceptanceTests:
 
     def test_commandline(self):
         """Count words in a short text"""
@@ -26,10 +24,3 @@ class WordCounterAcceptanceTests(TestCase):
         # check the output
         out = open(OUTPUT).read()
         self.assertTrue('white:\t2' in out)
-
-if __name__ == '__main__':
-    main()
-
-
-
-
