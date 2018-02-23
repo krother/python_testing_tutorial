@@ -8,8 +8,9 @@ This tutorial helps you to learn automated testing in Python 3 using the `py.tes
 
 ## Latest version of this book
 
-* Sources for this tutorial: [github.com/krother/python_testing_tutorial](http://github.com/krother/python_testing_tutorial).
+* Sources for this tutorial: [github.com/krother/python_testing_tutorial](https://github.com/krother/python_testing_tutorial).
 * PDF and EPUB versions: [www.gitbook.io/book/krother/python-testing-tutorial](http://www.gitbook.io/book/krother/python-testing-tutorial)
+
 
 ## Copyright
 
