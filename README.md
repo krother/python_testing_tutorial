@@ -10,8 +10,8 @@ Some material also covers the `unittest` and `nose` frameworks, and most should 
 
 ## Latest version of this book
 
-* Complete material (book + code examples): [https://github.com/krother/python_testing_tutorial](https://github.com/krother/python_testing_tutorial).
-* PDF and EPUB versions: [https://www.gitbook.io/book/krother/python-testing-tutorial](https://www.gitbook.io/book/krother/python-testing-tutorial)
+* Complete material (book + code examples): [github.com/krother/python_testing_tutorial](http://github.com/krother/python_testing_tutorial).
+* PDF and EPUB versions: [www.gitbook.io/book/krother/python-testing-tutorial](http://www.gitbook.io/book/krother/python-testing-tutorial)
 
 ## Copyright
 
@@ -23,4 +23,5 @@ Released under the conditions of a Creative Commons
 Attribution License 4.0.
 
 ## Contributors
+
 Kristian Rother, Magdalena Rother, Daniel Szoska
