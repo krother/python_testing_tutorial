@@ -1,27 +1,28 @@
-#
-# Example of a class derived from TestCase 
-#
+"""
+Another group of tests
 
-from word_counter import TextBody
+fix all errors in the tests
+"""
+from mobydick import TextCorpus
+
 
 MOBYDICK_SUMMARY = open('mobydick_summary.txt').read()
 
-class TestAverageWordLengthTests:
+
+class AverageWordLength:
     """Tests for word_counter module."""
 
     def test_average_words(self):
         """Simple average length."""
-        text = TextBody("white whale")
-        self.assertEqual(text.get_average_word_length(), 5)
+        text = TextCorpus("white whale")
+        assert text.get_average_word_length() == 5
 
-    def test_average_words_complex(self):
+    def tesl_average_words_complex(self):
         """Complex average length."""
-        text = TextBody(MOBYDICK_SUMMARY)
+        text = TextCorpus(MOBYDICK_SUMMARY)
         self.assertAlmostEqual(text.get_average_word_length(), 4.0, 3)
 
     def test_average_empty(self):
-        """Tests behaviour when input is not a string."""
-        text = TextBody("")
-        self.assertRaises(TypeError, text.get_average_word_length)
-        
-
+        """Tests behaviour when input is an empty string."""
+        text = TextCorpus("")
+        assert text.get_average_word_length() == 0

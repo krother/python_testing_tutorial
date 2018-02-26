@@ -26,10 +26,9 @@ class TextCorpus:
         return sum(lengths) / len(lengths)
 
 
-def count_word(text, word):
+def count_word(corpus, word):
     """Counts a single word."""
-    number = text.words.count(word)
-
+    number = corpus.words.count(word)
 
 
 def get_top_words(text, n):

@@ -5,11 +5,11 @@ Example for testing a command-line app
 import os
 
 PROGRAM = '../mobydick/word_counter.py'
-TEXT_FILE = '../test_data/mobydick_summary.txt'
+TEXT_FILE = 'mobydick_summary.txt'
 OUTPUT = 'out.tmp'
 
 
-class TestWordCounterAcceptanceTests:
+class TestCommandline:
 
     def test_commandline(self):
         """Count words in a short text"""
@@ -18,9 +18,9 @@ class TestWordCounterAcceptanceTests:
             os.remove(OUTPUT)
 
         # run the command line app
-        cmd = 'python %s %s white > %s' % (PROGRAM, TEXT_FILE, OUTPUT)
+        cmd = 'python %s %s 2 > %s' % (PROGRAM, TEXT_FILE, OUTPUT)
         os.system(cmd)
         
         # check the output
         out = open(OUTPUT).read()
-        self.assertTrue('white:\t2' in out)
+        assert 'white:\t2' in out

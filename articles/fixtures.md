@@ -1,64 +1,43 @@
 
-# Test Data
+# Fixtures
 
-### Exercise 1: A module with test data
-Create a new module **test_data.py** with a string variable that contains a sentence with lots of special characters:
+### Exercise 1: A module for test data
 
-    "That #§&%$* program still doesn't work!\nI already de-bugged it 3 times, and still numpy.array keeps raising AttributeErrors. What should I do?"
+Create a new module `conftest.py` with a string variable that contains a sentence with lots of special characters:
 
-Your task is to write a test for the module **word_count.py** using the string imported from the **test_data** module.
+    sample = """That #§&%$* program still doesn't work!
+    I already de-bugged it 3 times, and still numpy.array keeps raising AttributeErrors. What should I do?"""
+
+Create a function that returns a `mobydick.TextCorpus` object with the sample text above. Use the following as a header:
+
+    @pytest.fixture
+    def sample_corpus():
+        ...
 
 
-### Exercise 2: Preparing tests with fixtures
-Sometimes multiple tests need similar preparations. For instance, the tests in **test_word_report.py** require loading the contents of the text file **mobydick_summary.txt**.
+### Exercise 2: Using the fixture
 
-Your task is to make sure the code for loading the text file appears only once.
+Now create a module `test_sample.py` with a function that uses the fixture:
+
+    def test_sample_text(sample_corpus):
+        assert sample_corpus.n_words == 77
+
+Execute the module with `pytest`. Note that you **do not** need to import `conftest`. Pytest does that automatically.
 
 
-### Exercise 3: Sets of example data
-You have a list of pairs (data sample, expected result) for the program **count_words.py** that apply to the text **mobydick_summary.txt**:
+### Exercise 3: Create more fixtures
 
-| word | count |
-|------|-------|
-| months | 1 |
-| whale  | 5 |
-| captain | 4 |
-| white | 2 |
-| harpoon | 1 |
-| Ahab | 1 |
+Create fixtures for the two text corpora in the files `mobydick_full.txt` and `mobydick_summary.txt` as well.
 
-Your task is to create six tests from these samples. Figure out how more pairs can be added easily. In particular, *don't* copy-paste a new test function for each data sample.
 
-### Exercise 4: Write a test with sample data
-The module **word_report.py** contains a function to calculate the most frequent words in a text body. It should produce the following top five results for the book in **mobydick.txt**:
+### Exercise 4: Fixtures from fixtures
 
-| position | word |
-|----------|------|
-| 1. | of   |
-| 2. | the  |
-| 3. | is   |
-| 4. | sea  |
-| 5. | ship |
+Create a fixture in `conftest.py` that uses another fixture:
 
-Your task is to write tests for these five positions.
+    from mobydick import WordCounter
 
-### Exercise 5: Import test data in multiple test packages
-In a big software project, your tests are distributed to two packages. Both **test_first.py** and **test_second.py** require the variable **MOBYDICK_SUMMARY** from the module **test data.py**. The package structure is like this:
+    @pytest.fixture
+    def counter(mobydick_summary):
+    	return WordCounter(mobydick_summary)
 
-    testss/
-        test_a/
-            __init__.py
-            test_first.py
-        test_b/
-            __init__.py
-            test_second.py
-        __init__.py
-        test_data.py
-        test_all.py
-
-Your task is to make sure that the variable **MOBYDICK_SUMMARY** is correctly imported to both test modules, so that the tests pass for all of:
-
-    tests/test_a/test_first.py
-    tests/test_b/test_second.py
-    tests/test_all.py
-
+Write a simple test that makes sure the fixture is not `None`

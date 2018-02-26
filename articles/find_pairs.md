@@ -1,7 +1,8 @@
 
-# Recap
+# Recap Puzzle
 
-Match the test strategies with the according descriptions.
+The rows in the table got messed up! 
+Match the test strategies with the correct descriptions.
 
 | test strategy | description |
 |---------------|-------------|
@@ -13,4 +14,4 @@ Match the test strategies with the according descriptions.
 | Test data | replaces a complex object to make testing simpler |
 | Test coverage | tests functionality from the users point of view |
 
-
+This exercise works better when each element from the table is printed on a paper card.
