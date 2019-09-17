@@ -21,3 +21,11 @@ Our aim is to save you preparation time while leaving room for your own ideas. M
 5. Share the chapter "Reference" on your test framework with your trainees.
 6. Start coding!
 
+
+## Why was this example selected?
+
+Three main reasons:
+
+* The implementation is simple enough for beginners.
+* Counting words easily yields different results (because of upper/lower case, special characters etc). Therefore the program needs to be thoroughly tested.
+* You can easily change the theme to another book from [Project Gutenberg](http://www.gutenberg.org/).

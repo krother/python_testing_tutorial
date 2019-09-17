@@ -9,10 +9,10 @@
 * [Unit Tests](articles/unit_tests.md)
 * [Fixtures](articles/fixtures.md)
 * [Parameterized Tests](articles/parameterized.md)
-* [Testing Command-Line Programs](articles/testing_command_line_programs.md)
 * [Test Suites](articles/test_suites.md)
 * [Test Coverage](articles/test_coverage.md)
 * [Testing New Features](articles/testing_new_features.md)
+* [Testing Command-Line Programs](articles/testing_command_line_programs.md)
 
 ### Instructions for Trainers
 
