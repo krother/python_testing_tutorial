@@ -52,3 +52,25 @@ High quality tests cover many different situations. The most common situations f
 | nasty | difficult example | "That #~&%* program still doesn't work!" | 6
 
 Your task is to make all tests in **test_border_cases.py** pass.
+
+## New Features!
+
+### Exercise 5: Word separators
+
+The program **word_counter.py** separates words at spaces, but not tabulators. You need to change that.
+
+The following sentence should also contain **four** words:
+
+    The\tprogram\tworks\tperfectly.
+
+Your task is to add a test for this new situation and make it work.
+
+### Exercise 6: Special characters
+Add a new feature to the **word_counter.py** program. The program should remove special characters from the text before counting words.
+
+Your task is to prove that the new feature is working.
+
+### Exercise 7: Ignore case
+Add a new feature to the **word_counter.py** program. The program should ignore the case of words, e.g. *'captain'* and *'Captain'* should be counted as the same word.
+
+Your task is to prove that the new feature is working.
