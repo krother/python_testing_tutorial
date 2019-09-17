@@ -18,7 +18,7 @@ Run the example test in **test_unit_test.py** with
 
 ### Exercise 2: Test proves if code is broken
 
-The test in the module **test_failing_code.py** fails, because there is a bug in the function **word_counter.average_word_length()**. In the sentence
+The test in the module **test_broken_code.py** fails, because there is a bug in the function **word_counter.average_word_length()**. In the sentence
 
     Call me Ishmael
 
@@ -52,4 +52,3 @@ High quality tests cover many different situations. The most common situations f
 | nasty | difficult example | "That #~&%* program still doesn't work!" | 6
 
 Your task is to make all tests in **test_border_cases.py** pass.
- 

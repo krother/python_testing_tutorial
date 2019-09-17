@@ -16,8 +16,6 @@
 
 ### Instructions for Trainers
 
-* [Theme: Counting Words in Moby Dick](articles/mobydick_theme.md)
 * [Lesson Plan for a 45' tutorial](articles/lesson_plan_for_a_45_tutorial.md)
 * [Lesson Plan for a 180' tutorial](articles/lesson_plan_for_a_180_tutorial.md)
 * [Recap Puzzle](articles/find_pairs.md)
-
