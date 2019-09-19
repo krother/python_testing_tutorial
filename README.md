@@ -1,8 +1,6 @@
 # Python Testing Tutorial
 
-## Overview
-
-This tutorial helps you to learn automated testing in Python 3 using the `py.test` framework.
+This tutorial helps you to learn automated testing in Python 3 using the `pytest` framework.
 
 ![Moby Dick](images/mobydick.png)
 
@@ -21,6 +19,21 @@ Herman Melville's book *“Moby Dick”* describes the epic fight between the ca
 
 * clone the repository: `git clone https://github.com/krother/python_testing_tutorial.git`
 * make `mobydick/` importable: `export PYTHONPATH=$PYTHONPATH:/home/kristian/projects/python_testing_tutorial`
+
+## Exercises
+
+* [Warming Up](articles/icebreaker_question.md)
+* [Unit Tests](articles/unit_tests.md)
+* [Fixtures](articles/fixtures.md)
+* [Parameterized Tests](articles/parameterized.md)
+* [Test Suites](articles/test_suites.md)
+* [Test Coverage](articles/test_coverage.md)
+
+## Appendix
+
+* [Instructions for Trainers](articles/instructions_for_trainers.md)
+* [Recap Puzzle](articles/find_pairs.md)
+* [Quotes on Testing](articles/quotes.md)
 
 
 ## Sources
