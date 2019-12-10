@@ -17,8 +17,13 @@ Herman Melville's book *“Moby Dick”* describes the epic fight between the ca
 
 ## Preparations
 
-* clone the repository: `git clone https://github.com/krother/python_testing_tutorial.git`
-* make `mobydick/` importable: `export PYTHONPATH=$PYTHONPATH:/home/kristian/projects/python_testing_tutorial`
+clone the repository:
+
+    git clone https://github.com/krother/python_testing_tutorial.git
+
+make `mobydick/` importable:
+
+    export PYTHONPATH=$PYTHONPATH:/home/kristian/projects/python_testing_tutorial
 
 ## Exercises
 
