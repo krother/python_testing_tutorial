@@ -39,7 +39,7 @@ make `mobydick/` importable:
 * [Instructions for Trainers](articles/instructions_for_trainers.md)
 * [Recap Puzzle](articles/find_pairs.md)
 * [Quotes on Testing](articles/quotes.md)
-
+* [Links](articles/links.md)
 
 ## Sources
 
