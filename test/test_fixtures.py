@@ -2,7 +2,7 @@
 # example of tests with fixtures
 #
 
-from mobydick.word_counter import TextBody
+from word_counter import TextBody
 
 
 def set_up(self):

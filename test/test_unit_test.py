@@ -2,12 +2,12 @@
 Example of a Unit Test
 """
 
-from mobydick import TextCorpus
+from word_counter import count_words
 
 
 class TestMobyDick:
 
-    def test_word_number(self):
+    def test_count_words(self):
         """Count words in a short sentence"""
-        text = TextCorpus("Call me Ishmael")
-        assert text.n_words == 3
+        n = count_words("Call me Ishmael")
+        assert n == 3

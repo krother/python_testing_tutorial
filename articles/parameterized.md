@@ -3,38 +3,58 @@
 
 ### Exercise 1: Sets of example data
 
-You have a list of pairs (word, count) that apply to the text file `mobydick_summary.txt`:
+The tests in `test_parameterized.py` check a list of pairs (word, count) that apply to the text file `mobydick_summary.txt`:
 
+    :::python3
     PAIRS = [
-             ('months', 1),
-             ('whale', 5),
-             ('captain', 4),
-             ('white', 2),
-             ('harpoon', 1),
-             ('goldfish', 0)
+        ('whale', 5),
+        ('goldfish', 0),
+        ('captain', 4),
+        ('white', 2),
+        ('jellyfish', 99),
+       ('harpoon', 1),
     ]
 
-We will create six tests from these samples.
+Run the tests and see what happens.
 
-Instead of creating six tests manually, we will use the **test parametrization in pytest**. Edit the file `test_parameterized.py` and add the following decorator to the test function:
+### Exercise 2: Fixing the test
+
+Fix the test by using the `count.get(word)` method instead of `[word]`.
+Run the test again. What happens?
+
+### Exercise 3: Parameterize
+
+There is a deeper issue here. We want all test examples to be *independent*.
+We will create six tests from the example data.
+
+Use the **test parametrization in pytest**.
+Change the test function by adding the following decorator:
+
+    :::python3
+    import pytest
 
     @pytest.mark.parametrize('word, number', PAIRS)
+    def test_count_words_dict(word, number):
+        ...
 
-Add two arguments `word` and `number` to the function header and remove the assignment below.
+The two arguments will be filled in automatically.
+Now remove the `for` loop.
 
-Run the test and make sure all six tests pass.
+Run the test.
+You should see six tests instead of one.
+Make sure all six pass.
 
 
 ### Exercise 2: Write another parameterized test
 
-The function **get_top_words()** calculates the most frequent words in a text corpus. It should produce the following top five results for the book **mobydick_full.txt**:
+Use test parametrization to test the `count_words()` function on the following test cases.
 
-| position | word |
+| text | expected result |
 |----------|------|
-| 1. | of   |
-| 2. | the  |
-| 3. | is   |
-| 4. | sea  |
-| 5. | ship |
+| Call me Ishmael | 3 |
+| . | 0  |
+| 1234 | 1 |
+| x | 1 |
+| We are the Borg - Resistance is futile | 7  |
 
-Write one parameterized test that checks these five positions.
+Write one parameterized test that checks these five examples.

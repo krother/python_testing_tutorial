@@ -4,7 +4,7 @@ Example of border cases
 TASK: fill in the gaps, so that the assertions work
 """
 
-from mobydick import TextCorpus
+from word_counter import count_words
 import pytest
 
 
@@ -12,28 +12,28 @@ class TestBorderCases:
 
     def test_empty(self):
         """Empty input works"""
-        text = TextCorpus('')
-        assert text.n_words == _____
+        text = ''
+        assert count_words(text) == _____
 
     def test_smallest(self):
         """Minimal string works."""
-        text = TextCorpus("whale")
-        _____ text.words == ['whale']
-        
+        text = "whale"
+        _____ count_words(text) == 1
+
     def test_typical(self):
-        """Representative small input works."""
-        text = TextCorpus("whale eats captain")
-        assert text.words == [_____, 'eats', 'captain']
+        """Representative input works."""
+        text = "whale eats captain"
+        assert ____ == ____
 
     def test_wrong_input(self):
-        """Non-string doesn't work"""
+        """Non-string fails with a specific error"""
         with pytest.raises(_____) as e_info:
-            TextCorpus(777)
+            count_words(777)
 
     def test_biggest(self):
         """An entire book works."""
-        text = TextCorpus(open('mobydick_full.txt').read())
-        assert text._____ > 200000
+        text = open('mobydick_full.txt').read()
+        assert _____ > 200000
 
     def test_sanity(self):
         """Feed output of a class into itself"""
@@ -48,4 +48,4 @@ class TestBorderCases:
         text = TextCorpus("""That #~&%* program still doesn't work!
     I already de-bugged it 3 times, and still numpy.array keeps throwing AttributeErrors.
     What should I do?""")
-        assert text.n_words == _____
+        assert count_words(text) == _____

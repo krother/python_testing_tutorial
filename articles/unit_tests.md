@@ -1,29 +1,50 @@
 
 # Unit Tests
 
+## Warming Up
+
+#### How many words are in the following sentence?
+
+    :::bash
+    Call me Ishmael.
+
+----
+
+#### How many words are in the next sentence?
+
+    :::bash
+    "you haint no objections to sharing a harpooneer's blanket,
+    have ye? I s'pose you are goin' a-whalin',
+    so you'd better get used to that sort of thing."
+
+
 ### Exercise 1: Test a Python function
 
 The function **main()** in the module **word_counter.py** calculates the number of words in a text body.
 
 For instance, the following sentence contains **three** words:
 
+    :::bash
     Call me Ishmael
 
 Your task is to prove that the **TextCorpus** class calculates the number of words in the sentence correctly with **three**.
 
 Run the example test in **test_unit_test.py** with
 
+    :::bash
     pytest test_unit_test.py
 
 
 ### Exercise 2: Test proves if code is broken
 
-The test in the module **test_broken_code.py** fails, because there is a bug in the function **word_counter.average_word_length()**. In the sentence
+The test in the module **test_broken_code.py** fails, because there is a bug in the function **word_counter.count_words()**. In the sentence
 
+    :::bash
     Call me Ishmael
 
 The words are **four, two,** and **seven** characters long. This gives an average of:
 
+    :::bash
     >>> (4 + 2 + 7) / 3.0
     4.333333333333333
 

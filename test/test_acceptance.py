@@ -19,8 +19,7 @@ class TestWordCounterAcceptanceTests:
         # run the command line app
         cmd = 'python %s %s white > %s' % (PROGRAM, TEXT_FILE, OUTPUT)
         os.system(cmd)
-        
+
         # check the output
         out = open(OUTPUT).read()
         self.assertTrue('white:\t2' in out)
-

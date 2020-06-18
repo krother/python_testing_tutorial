@@ -4,7 +4,7 @@ This tutorial helps you to learn automated testing in Python 3 using the `pytest
 
 ![Moby Dick](images/mobydick.png)
 
-## Goal: Counting Words in Moby Dick
+## Goal: Count Words in Moby Dick
 
 *Captain Ahab was vicious because Moby Dick, the white whale, had bitten off his leg. So the captain set sail for a hunt. For months he was searching the sea for the white whale. The captain finally attacked the whale with a harpoon. Unimpressed, the whale devoured captain, crew and ship. The whale won.*
 
@@ -19,27 +19,36 @@ Herman Melville's book *“Moby Dick”* describes the epic fight between the ca
 
 clone the repository:
 
+    :::bash
     git clone https://github.com/krother/python_testing_tutorial.git
 
-make `mobydick/` importable:
+install **pytest**:
 
-    export PYTHONPATH=$PYTHONPATH:/home/kristian/projects/python_testing_tutorial
+    :::bash
+    pip install pytest
 
-## Exercises
+## Chapters
 
-* [Warming Up](articles/icebreaker_question.md)
 * [Unit Tests](articles/unit_tests.md)
 * [Fixtures](articles/fixtures.md)
 * [Parameterized Tests](articles/parameterized.md)
-* [Test Suites](articles/test_suites.md)
+* [Organizing Tests](articles/organizing_tests.md)
 * [Test Coverage](articles/test_coverage.md)
+* [Recap Puzzle](articles/find_pairs.md)
 
 ## Appendix
 
-* [Instructions for Trainers](articles/instructions_for_trainers.md)
-* [Recap Puzzle](articles/find_pairs.md)
 * [Quotes on Testing](articles/quotes.md)
-* [Links](articles/links.md)
+* [Instructions for Trainers](articles/instructions_for_trainers.md)
+
+## Links
+
+* [Python Testing Tutorial](https://katyhuff.github.io/python-testing/) - by Kathryn Huff
+* [Introduction to pytest](https://www.youtube.com/watch?v=UPanUFVFfzY) - by Michael Tom-Wing and Christie Wilson
+* [Test & Code Podcast](http://testandcode.com/) - by Brian Okken
+* [The Clean Code Talks – Unit Testing](http://www.youtube.com/watch?v=wEhu57pih5w&feature=channel)
+* [Test-Driven-Development](https://www.youtube.com/watch?v=L4hOiGOKSxQ) - by H.Percival
+
 
 ## Sources
 

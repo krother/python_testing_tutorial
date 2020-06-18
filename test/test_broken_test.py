@@ -2,7 +2,7 @@
 Example of test that fails because of a broken test.
 """
 
-from mobydick import TextCorpus
+from word_counter import TextCorpus
 
 
 class TestMobyDickBrokenTest:
