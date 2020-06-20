@@ -15,6 +15,7 @@ Add `self` as the first parameter of each function:
         def test_dummy(self):
             assert ...
 
+----
 
 ### Exercise 2: Test collection
 
@@ -22,6 +23,8 @@ Run all tests written so far by simply typing
 
     :::bash
     pytest
+
+----
 
 ### Exercise 3: Test selection
 
@@ -40,6 +43,7 @@ Finally, run a single test:
     :::bash
     pytest FILE_NAME::CLASS_NAME::TEST_NAME
 
+----
 
 ### Exercise 4: Options
 

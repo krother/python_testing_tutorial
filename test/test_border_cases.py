@@ -1,7 +1,7 @@
 """
-Example of border cases
+Examples of border cases
 
-TASK: fill in the gaps, so that the assertions work
+TASK: fill in the gaps, so that all tests pass
 """
 
 from word_counter import count_words
@@ -18,12 +18,12 @@ class TestBorderCases:
     def test_smallest(self):
         """Minimal string works."""
         text = "whale"
-        _____ count_words(text) == 1
+        assert ____ == ____
 
     def test_typical(self):
         """Representative input works."""
         text = "whale eats captain"
-        assert ____ == ____
+        assert ____
 
     def test_wrong_input(self):
         """Non-string fails with a specific error"""
@@ -35,17 +35,15 @@ class TestBorderCases:
         text = open('mobydick_full.txt').read()
         assert _____ > 200000
 
-    def test_sanity(self):
-        """Feed output of a class into itself"""
-        text = TextCorpus(open('mobydick_full.txt').read())
-        words_before = list(text.words)
-        copy = ' '.join(text.words)
-        text_after = TextCorpus(copy)
-        assert words_before == _____
-
-    def test_nasty(self):
-        """Ugly data example works."""
-        text = TextCorpus("""That #~&%* program still doesn't work!
-    I already de-bugged it 3 times, and still numpy.array keeps throwing AttributeErrors.
-    What should I do?""")
+    def test_nasty1(self):
+        text = """you haint no objections to sharing a harpooneer's blanket,
+have ye? I s'pose you are goin' a-whalin',
+so you'd better get used to that sort of thing."""
         assert count_words(text) == _____
+
+    def test_nasty2(self):
+        """Another ugly data example works."""
+        text = """That #~&%* program still doesn't work!
+    I already de-bugged it 3 times, and still numpy.array keeps throwing AttributeErrors.
+    What should I do?"""
+        _____

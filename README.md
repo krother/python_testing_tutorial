@@ -12,7 +12,7 @@ This tutorial helps you to learn automated testing in Python 3 using the `pytest
 
 Herman Melville's book *“Moby Dick”* describes the epic fight between the captain of a whaling ship and a whale. In the book, the whale wins by eating most of the other characters. **But does he also win by being mentioned more often?**
 
-**In this course, you will test a program that analyzes the text of Melville's book.**
+**In this course, you will test a program that is counting words in Melville's book.**
 
 
 ## Preparations

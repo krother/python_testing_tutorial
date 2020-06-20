@@ -5,7 +5,7 @@ Example of test that fails because of broken code.
 from word_counter import count_words
 
 
-def test_count_words_broken(self):
-        """a test that fails because the code is broken"""
-        text = "I s'pose you are goin' a-whalin'"
-        assert round(text.average_word_length, 3) == 4.333
+def test_count_words_tabs():
+    """words are separated by tabs as well"""
+    text = "the\twhite\whale"
+    assert count_words(text) == 3

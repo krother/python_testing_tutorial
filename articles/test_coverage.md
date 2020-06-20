@@ -6,6 +6,7 @@ For the next exercises, you need to install a small plugin:
     :::bash
     pip install pytest-cov
 
+----
 
 ### Exercise 1: Calculate Test Coverage
 
@@ -18,6 +19,8 @@ Instead of the `.` you can insert the path you would like to see in the coverage
 
 Check whether any hidden files have appeared.
 
+----
+
 ### Exercise 2: Identify uncovered lines
 Find out which lines are not covered by tests. Execute
 
@@ -26,9 +29,13 @@ Find out which lines are not covered by tests. Execute
 
 Open the resulting file `htmlcov/index.html` in a web browser.
 
+----
+
 ### Exercise 3: Increase test coverage
 
 Write more tests to increase the test coverage of `word_counter.py` to 100%.
+
+----
 
 ### Reflection Questions
 

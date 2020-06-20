@@ -17,10 +17,14 @@ The tests in `test_parameterized.py` check a list of pairs (word, count) that ap
 
 Run the tests and see what happens.
 
+----
+
 ### Exercise 2: Fixing the test
 
 Fix the test by using the `count.get(word)` method instead of `[word]`.
 Run the test again. What happens?
+
+----
 
 ### Exercise 3: Parameterize
 
@@ -44,6 +48,7 @@ Run the test.
 You should see six tests instead of one.
 Make sure all six pass.
 
+----
 
 ### Exercise 2: Write another parameterized test
 

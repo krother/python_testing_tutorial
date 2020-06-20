@@ -1,43 +1,54 @@
 
 # Fixtures
 
+Sometimes you need to prepare test data (load files, create objects etc.).
+If you want to prepare the same data for multiple tests, you can use a **fixture**.
+
+----
+
 ### Exercise 1: A module for test data
 
-Create a new module `conftest.py` with a string variable that contains a sentence with lots of special characters:
+Create a new module `conftest.py` in the same directory as your tests.
+There, add a function that loads the file `data/mobydick_summary.txt`:
 
-    sample = """That #§&%$* program still doesn't work!
-    I already de-bugged it 3 times, and still numpy.array keeps raising AttributeErrors. What should I do?"""
+Place the decorator `@pytest.fixture` on top of it:
 
-Create a function that returns a `mobydick.TextCorpus` object with the sample text above. Use the following as a header:
+    :::python3
+    import pytest
 
     @pytest.fixture
-    def sample_corpus():
-        ...
+    def text_summary():
+        return open(...).read()
 
+----
 
 ### Exercise 2: Using the fixture
 
-Now create a module `test_sample.py` with a function that uses the fixture:
+Now create a module `test_corpus.py` with a function that uses the fixture:
 
-    def test_sample_text(sample_corpus):
-        assert sample_corpus.n_words == 77
+    :::python3
+    def test_short_sample(text_summary):
+        assert count_words(text_summary) == 77
 
 Execute the module with `pytest`. Note that you **do not** need to import `conftest`. Pytest does that automatically.
 
+----
 
 ### Exercise 3: Create more fixtures
 
-Create fixtures for the two text corpora in the files `mobydick_full.txt` and `mobydick_summary.txt` as well.
+Create a fixture for the full text of the book `mobydick_full.txt` as well.
 
+----
 
 ### Exercise 4: Fixtures from fixtures
 
-Create a fixture in `conftest.py` that uses another fixture:
+Create a fixture in `conftest.py` that prepares a dictionary with word counts using the `word_counter.count_words_dict()` function.
 
-    from mobydick import WordCounter
+    :::python3
+    from word_counter import count_words_dict
 
     @pytest.fixture
-    def counter(mobydick_summary):
-    	return WordCounter(mobydick_summary)
+    def count_dict(text_summary):
+    	return ...
 
-Write a simple test that makes sure the fixture is not `None`
+Write a simple test that makes sure the dictionary is not empty.
