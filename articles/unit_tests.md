@@ -40,22 +40,21 @@ Run the example test in `test_unit_test.py` with
 
 ### Exercise 2: A test fails if code is broken
 
-Run the test in `test_broken_code.py` and inspect the output.
+Run the tests in `test_broken.py` and inspect the output.
 
-It fails, because there is a bug in the function `count_words()`.
-The example string this time contains words **separated by tabulators**.
+One of the tests fails, because there is a bug in the function `count_words()`.
 
-Fix the code in `word_counter.py`, so that the test in `test_broken_code.py` passes.
+The other test fails because there is a bug in the test.
+
+Find out what is broken in which test.
 
 ----
 
-### Exercise 3: A test fails if the test is broken
+### Exercise 3: Fixing tests
 
-Run the test in `test_broken_test.py` and inspect the output.
+Fix the code and test in `test_broken.py`.
 
-It fails, because there is a bug in the test file.
-
-Fix the test code, so that the test passes.
+Run the tests again, so that both of them pass.
 
 ----
 

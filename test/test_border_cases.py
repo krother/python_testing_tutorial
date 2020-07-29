@@ -32,18 +32,11 @@ class TestBorderCases:
 
     def test_biggest(self):
         """An entire book works."""
-        text = open('mobydick_full.txt').read()
-        assert _____ > 200000
+        text = open('____mobydick_full.txt').read()
+        assert count_words(text) > 200000
 
-    def test_nasty1(self):
+    def test_nasty(self):
         text = """you haint no objections to sharing a harpooneer's blanket,
 have ye? I s'pose you are goin' a-whalin',
 so you'd better get used to that sort of thing."""
         assert count_words(text) == _____
-
-    def test_nasty2(self):
-        """Another ugly data example works."""
-        text = """That #~&%* program still doesn't work!
-    I already de-bugged it 3 times, and still numpy.array keeps throwing AttributeErrors.
-    What should I do?"""
-        _____
