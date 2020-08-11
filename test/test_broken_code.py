@@ -7,5 +7,5 @@ from mobydick.word_counter import count_words
 
 def test_count_words_tabs():
     """words are separated by tabs as well"""
-    n = count_words("the\twhite\thale")
-    assert n == 3
+    text = "the\twhite\thale"
+    assert count_words(text) == 3
