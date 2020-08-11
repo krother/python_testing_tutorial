@@ -4,3 +4,4 @@ out.tmp
 test/.pytest_cache/*
 __pycache__/*
 .coverage
+htmlcov

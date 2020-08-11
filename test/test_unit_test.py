@@ -2,7 +2,7 @@
 Example of a Unit Test
 """
 
-from word_counter import count_words
+from mobydick.word_counter import count_words
 
 
 class TestMobyDick:

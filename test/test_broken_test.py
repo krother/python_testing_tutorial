@@ -2,7 +2,7 @@
 Example of test that fails because of a broken test.
 """
 
-from word_counter import count_words
+from mobydick.word_counter import count_words
 
 
 def test_words():

@@ -22,7 +22,7 @@ Add `self` as the first parameter of each function:
 Run all tests written so far by simply typing
 
     :::bash
-    pytest
+    python -m pytest
 
 ----
 
@@ -31,17 +31,17 @@ Run all tests written so far by simply typing
 Run only one test file:
 
     :::bash
-    pytest FILE_NAME
+    python -m pytest FILE_NAME
 
 Run only one test class:
 
     :::bash
-    pytest FILE_NAME::CLASS_NAME
+    pytest -m pytest FILE_NAME::CLASS_NAME
 
 Finally, run a single test:
 
     :::bash
-    pytest FILE_NAME::CLASS_NAME::TEST_NAME
+    pytest -m pytest FILE_NAME::CLASS_NAME::TEST_NAME
 
 ----
 

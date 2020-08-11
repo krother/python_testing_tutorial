@@ -22,19 +22,19 @@
 
 ### Exercise 1: Test a Python function
 
-The function `count_words()` in the module **word_counter.py** calculates the number of words in a text body.
+The method `count_words()` of the class **TextCorpus** in the module **word_counter.py** calculates the number of words in a text body.
 
 For instance, we would expect the following input to result in a word count of `3`:
 
     :::bash
     Call me Ishmael
 
-Your task is to prove that the `count_words()` function in fact returns `3`.
+Your task is to prove that the `count_words()` method in fact returns `3`.
 
 Run the example test in `test_unit_test.py` with
 
     :::bash
-    pytest test_unit_test.py
+    python -m pytest test/test_unit_test.py
 
 ----
 
@@ -55,7 +55,7 @@ Run the test in `test_broken_test.py` and inspect the output.
 
 It fails, because there is a bug in the test file.
 
-Fix the test code, so that the test passes.
+Fix the *test code*, so that the test passes.
 
 ----
 

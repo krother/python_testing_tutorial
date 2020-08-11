@@ -8,7 +8,7 @@ This tutorial helps you to learn automated testing in Python 3 using the `pytest
 
 *Captain Ahab was vicious because Moby Dick, the white whale, had bitten off his leg. So the captain set sail for a hunt. For months he was searching the sea for the white whale. The captain finally attacked the whale with a harpoon. Unimpressed, the whale devoured captain, crew and ship. The whale won.*
 
-![tick marks while counting words](../images/counting470.png "Counting words")
+![tick marks while counting words](images/counting470.png "Counting words")
 
 Herman Melville's book *“Moby Dick”* describes the epic fight between the captain of a whaling ship and a whale. In the book, the whale wins by eating most of the other characters. **But does he also win by being mentioned more often?**
 

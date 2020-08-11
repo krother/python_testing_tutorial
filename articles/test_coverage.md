@@ -25,7 +25,7 @@ Check whether any hidden files have appeared.
 Find out which lines are not covered by tests. Execute
 
     :::bash
-    coverage html
+    python -m pytest --cov=. --cov-report html
 
 Open the resulting file `htmlcov/index.html` in a web browser.
 
