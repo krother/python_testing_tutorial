@@ -5,7 +5,7 @@
 
 The tests in `test_parameterized.py` check a list of pairs (word, count) that apply to the text file `mobydick_summary.txt`:
 
-    :::python3
+    ```python
     PAIRS = [
         ('whale', 5),
         ('goldfish', 0),
@@ -14,6 +14,7 @@ The tests in `test_parameterized.py` check a list of pairs (word, count) that ap
         ('jellyfish', 99),
        ('harpoon', 1),
     ]
+    ```
 
 Run the tests and see what happens.
 
@@ -34,12 +35,13 @@ We will create six tests from the example data.
 Use the **test parametrization in pytest**.
 Change the test function by adding the following decorator:
 
-    :::python3
-    import pytest
+```python
+import pytest
 
-    @pytest.mark.parametrize('word, number', PAIRS)
-    def test_count_words_dict(word, number):
-        ...
+@pytest.mark.parametrize('word, number', PAIRS)
+def test_count_words_dict(word, number):
+    ...
+```
 
 The two arguments will be filled in automatically.
 Now remove the `for` loop.

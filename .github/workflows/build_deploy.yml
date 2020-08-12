@@ -1,0 +1,43 @@
+# adapted from https://github.com/peaceiris/actions-gh-pages/blob/master/README.md#%EF%B8%8F-static-site-generators-with-nodejs and https://github.com/appleboy/scp-action/blob/master/README.md#example
+
+name: build and deploy the site
+
+on: 
+  push:
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-18.04
+    steps:
+        - name: Checkout repo
+          uses: actions/checkout@v1
+          with:
+            submodules: true
+
+        - name: Setup Python
+          uses: actions/setup-python@v1
+          with:
+            python-version: '3.7'
+            architecture: 'x64'
+
+        - name: Cache dependencies
+          uses: actions/cache@v1
+          with:
+            path: ~/.cache/pip
+            key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+            restore-keys: |
+              ${{ runner.os }}-pip-
+
+        - name: Install dependencies
+          run: |
+            python3 -m pip install --upgrade pip
+            python3 -m pip install -r ./requirements.txt
+
+        - name: Build docs
+          run: mkdocs build
+
+        - name: Deploy
+          uses: peaceiris/actions-gh-pages@v3
+          with:
+            github_token: ${{ secrets.GITHUB_TOKEN }}
+            publish_dir: ./_site

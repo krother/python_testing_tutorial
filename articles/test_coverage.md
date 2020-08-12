@@ -3,8 +3,9 @@
 
 For the next exercises, you need to install a small plugin:
 
-    :::bash
-    pip install pytest-cov
+```bash
+pip install pytest-cov
+```
 
 ----
 
@@ -12,8 +13,9 @@ For the next exercises, you need to install a small plugin:
 
 Calculate the percentage of code covered by automatic tests:
 
-    :::bash
-    pytest --cov=.
+```bash
+pytest --cov=.
+```
 
 Instead of the `.` you can insert the path you would like to see in the coverage report.
 
@@ -24,8 +26,9 @@ Check whether any hidden files have appeared.
 ### Exercise 2: Identify uncovered lines
 Find out which lines are not covered by tests. Execute
 
-    :::bash
+    ```bash
     python -m pytest --cov=. --cov-report html
+    ```
 
 Open the resulting file `htmlcov/index.html` in a web browser.
 

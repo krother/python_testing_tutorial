@@ -5,17 +5,19 @@
 
 #### How many words are in the following sentence?
 
-    :::bash
-    Call me Ishmael.
+```bash
+Call me Ishmael.
+```
 
 ----
 
 #### How many words are in the next sentence?
 
-    :::bash
-    "you haint no objections to sharing a harpooneer's blanket,
-    have ye? I s'pose you are goin' a-whalin',
-    so you'd better get used to that sort of thing."
+```bash
+"you haint no objections to sharing a harpooneer's blanket,
+have ye? I s'pose you are goin' a-whalin',
+so you'd better get used to that sort of thing."
+```
 
 
 ----
@@ -26,15 +28,17 @@ The function `count_words()` in the module **word_counter.py** calculates the nu
 
 For instance, we would expect the following input to result in a word count of `3`:
 
-    :::bash
-    Call me Ishmael
+```bash
+Call me Ishmael
+```
 
 Your task is to prove that the `count_words()` function in fact returns `3`.
 
 Run the example test in `test_unit_test.py` with
 
-    :::bash
-    python -m pytest test/test_unit_test.py
+```bash
+python -m pytest test/test_unit_test.py
+```
 
 ----
 

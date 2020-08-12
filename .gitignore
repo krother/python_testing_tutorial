@@ -5,3 +5,4 @@ test/.pytest_cache/*
 __pycache__/*
 .coverage
 htmlcov
+_site

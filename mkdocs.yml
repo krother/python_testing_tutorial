@@ -1,0 +1,55 @@
+site_name: Python Testing Tutorial
+site_description: This tutorial helps you to learn automated testing in Python 3 using the `pytest` framework.
+site_author: Spiced Academy
+copyright: Spiced Academy
+site_url: ''
+theme:
+    name: material
+    palette:
+        primary: 'blue grey'
+        accent: 'light blue'
+site_dir: ./_site
+docs_dir: ./articles
+
+plugins:
+    - search
+    - git-revision-date-localized
+    #- minify:
+     #   minify_html: true
+      #  minify_js: true
+    #- mkdocs-jupyter
+
+markdown_extensions:
+    - footnotes
+    - admonition
+    - pymdownx.arithmatex
+    - pymdownx.betterem:
+        smart_enable: all
+    - pymdownx.caret
+    - pymdownx.critic
+    - pymdownx.details
+    - pymdownx.emoji:
+        emoji_generator: !!python/name:pymdownx.emoji.to_svg
+    - pymdownx.inlinehilite
+    - pymdownx.magiclink
+    - pymdownx.mark
+    - pymdownx.smartsymbols
+    - pymdownx.superfences
+    - pymdownx.tasklist:
+        custom_checkbox: true
+    - pymdownx.tilde
+    - codehilite:
+        guess_lang: false
+    - toc:
+        permalink: true        
+
+nav:
+    - Unit Tests: 'unit_tests.md'
+    - Fixtures: 'fixtures.md'
+    - Parameterized Tests: 'parameterized.md'
+    - Organizing Tests: 'organizing_tests.md'
+    - Test Coverage: 'test_coverage.md'
+    - Recap Puzzle: 'find_pairs.md'
+    - 'Appendix: Quotes': 'quotes.md'
+    - 'Appendix: Instructions For Trainers': 'instructions_for_trainers.md'
+
