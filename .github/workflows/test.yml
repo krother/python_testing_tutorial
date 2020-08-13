@@ -11,7 +11,7 @@ jobs:
         # os: [macos-latest, windows-latest, ubuntu-18.04]
         os: [ubuntu-18.04, macos-latest, windows-latest]
         # python-version: [3.8, 3.6]
-        python-version: [3.8, 3.6, 3.3]
+        python-version: [3.8.5, 3.7.8, 3.6.11]
     steps:
       - name: checkout repo
         uses: actions/checkout@v2
