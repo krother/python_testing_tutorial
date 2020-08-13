@@ -13,7 +13,7 @@ jobs:
         # python-version: [3.8, 3.6]
         python-version: [3.8]
     steps:
-      - name: chekout repo
+      - name: checkout repo
         uses: actions/checkout@v2
       - name: Set up Python ${{ matrix.python-version }} on ${{ matrix.os }}
         uses: actions/setup-python@v1
@@ -24,4 +24,4 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
       - name: Run tests
-        run: python -m pytest
+        run: python -m pytest test/test_unit_test.py
