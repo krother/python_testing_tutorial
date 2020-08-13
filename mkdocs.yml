@@ -2,7 +2,7 @@ site_name: Python Testing Tutorial
 site_description: This tutorial helps you to learn automated testing in Python 3 using the `pytest` framework.
 site_author: Spiced Academy
 copyright: Spiced Academy
-site_url: ''
+site_url: 'https://bonartm.github.io/python_testing_tutorial/'
 theme:
     name: material
     palette:
@@ -14,10 +14,6 @@ docs_dir: ./articles
 plugins:
     - search
     - git-revision-date-localized
-    #- minify:
-     #   minify_html: true
-      #  minify_js: true
-    #- mkdocs-jupyter
 
 markdown_extensions:
     - footnotes
@@ -51,5 +47,4 @@ nav:
     - Test Coverage: 'test_coverage.md'
     - Recap Puzzle: 'find_pairs.md'
     - 'Appendix: Quotes': 'quotes.md'
-    - 'Appendix: Instructions For Trainers': 'instructions_for_trainers.md'
 
