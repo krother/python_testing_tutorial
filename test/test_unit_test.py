@@ -2,8 +2,7 @@
 Example of a Unit Test
 """
 
-from mobydick.word_counter import count_words
-
+from mobydick.word_counter import count_words, split_to_words
 
 
 def test_count_words():

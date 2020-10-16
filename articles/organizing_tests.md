@@ -57,7 +57,7 @@ Find out which options of pytest do the following:
 *more verbose output | re-run failing tests | stop on first test that fails*
 
 ```bash
-pytest -lf
+pytest --lf
 pytest -v
 pytest -x
 ```

@@ -14,7 +14,7 @@ pip install pytest-cov
 Calculate the percentage of code covered by automatic tests:
 
 ```bash
-pytest --cov=.
+python -m pytest --cov=.
 ```
 
 Instead of the `.` you can insert the path you would like to see in the coverage report.
@@ -27,7 +27,7 @@ Check whether any hidden files have appeared.
 Find out which lines are not covered by tests. Execute
 
     ```bash
-    python -m pytest --cov=. --cov-report html
+    python -m pytest --cov=. --cov-report term-missing
     ```
 
 Open the resulting file `htmlcov/index.html` in a web browser.

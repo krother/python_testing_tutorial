@@ -12,7 +12,7 @@ def split_to_words(text):
 
 def count_words(text):
     '''count number of words in a text'''
-    words = split_to_words(text)    
+    words = split_to_words(text)
     return len(words)
 
 def count_word(text, word):
