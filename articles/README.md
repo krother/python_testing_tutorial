@@ -1,7 +1,5 @@
 # Python Testing Tutorial
 
-## I love Cologne
-
 This tutorial helps you to learn automated testing in Python 3 using the `pytest` framework.
 
 ![Moby Dick](./images/mobydick.png)
@@ -69,4 +67,4 @@ Attribution License 4.0.
 
 ## Contributors
 
-Kristian Rother, Magdalena Rother, Daniel Szoska
+Kristian Rother, Magdalena Rother, Daniel Szoska, Malte Bonart
