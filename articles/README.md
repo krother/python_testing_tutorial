@@ -29,6 +29,10 @@ install **pytest**:
 pip install pytest
 ```
 
+## Getting Started
+
+Start with the first exercises in the chapter [Unit Tests](unit_tests.md)!
+
 ## Links
 
 * [Python Testing Tutorial](https://katyhuff.github.io/python-testing/) - by Kathryn Huff
