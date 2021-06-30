@@ -29,20 +29,6 @@ install **pytest**:
 pip install pytest
 ```
 
-## Chapters
-
-* [Unit Tests](articles/unit_tests.md)
-* [Fixtures](articles/fixtures.md)
-* [Parameterized Tests](articles/parameterized.md)
-* [Organizing Tests](articles/organizing_tests.md)
-* [Test Coverage](articles/test_coverage.md)
-* [Recap Puzzle](articles/find_pairs.md)
-
-## Appendix
-
-* [Quotes on Testing](articles/quotes.md)
-* [Instructions for Trainers](articles/instructions_for_trainers.md)
-
 ## Links
 
 * [Python Testing Tutorial](https://katyhuff.github.io/python-testing/) - by Kathryn Huff
