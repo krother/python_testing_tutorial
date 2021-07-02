@@ -9,11 +9,12 @@ Make sure the name of the class starts with the word `Test`.
 Indent your test functions so that they belong to the class.
 Add `self` as the first parameter of each function:
 
-    :::python3
-    class TestDummy:
+```python
+class TestDummy:
 
-        def test_dummy(self):
-            assert ...
+    def test_dummy(self):
+        assert ...
+```
 
 ----
 
@@ -21,8 +22,9 @@ Add `self` as the first parameter of each function:
 
 Run all tests written so far by simply typing
 
-    :::bash
-    pytest
+```bash
+python -m pytest
+```
 
 ----
 
@@ -30,18 +32,21 @@ Run all tests written so far by simply typing
 
 Run only one test file:
 
-    :::bash
-    pytest FILE_NAME
+```bash
+python -m pytest FILE_NAME
+```
 
 Run only one test class:
 
-    :::bash
-    pytest FILE_NAME::CLASS_NAME
+```bash
+pytest -m pytest FILE_NAME::CLASS_NAME
+```
 
 Finally, run a single test:
 
-    :::bash
-    pytest FILE_NAME::CLASS_NAME::TEST_NAME
+```bash
+pytest -m pytest FILE_NAME::CLASS_NAME::TEST_NAME
+```
 
 ----
 
@@ -51,7 +56,8 @@ Find out which options of pytest do the following:
 
 *more verbose output | re-run failing tests | stop on first test that fails*
 
-    :::bash
-    pytest -lf
-    pytest -v
-    pytest -x
+```bash
+pytest --lf
+pytest -v
+pytest -x
+```
