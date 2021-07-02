@@ -9,7 +9,7 @@ TASK:
 Find out which is which and fix both.
 """
 
-from word_counter import count_words
+from mobydick.word_counter import count_words
 
 
 def test_count_words_tabs():
