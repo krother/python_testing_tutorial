@@ -1,7 +1,6 @@
+from mobydick.word_counter import count_words_dict
 
-from word_counter import count_words_dict
-
-MOBYDICK_SUMMARY = open('../data/mobydick_summary.txt').read()
+MOBYDICK_SUMMARY = open('./data/mobydick_summary.txt').read()
 
 
 PAIRS = [
@@ -15,6 +14,6 @@ PAIRS = [
 
 
 def test_count_words_dict():
-    counts = count_words_dict(text)
+    counts = count_words_dict(MOBYDICK_SUMMARY)
     for word, number in PAIRS:
         assert counts[word] == number
