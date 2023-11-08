@@ -1,0 +1,16 @@
+version: '3'
+services:
+
+  mongodb:
+    image: mongo
+    ports:
+    - 27017:27017
+
+  tweet_collector:
+    build: tweet_collector/
+    volumes:
+    - ./tweet_collector/:/app
+    env_file:
+    - example.env
+    depends_on:
+    - mongodb
