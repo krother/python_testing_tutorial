@@ -19,27 +19,30 @@ Herman Melville's book *“Moby Dick”* describes the epic fight between the ca
 
 clone the repository:
 
-    :::bash
     git clone https://github.com/krother/python_testing_tutorial.git
 
 install **pytest**:
 
-    :::bash
     pip install pytest
+
+or use `uv`:
+
+    uv sync
+    uv add pytest
 
 ## Chapters
 
-* [Unit Tests](articles/unit_tests.md)
-* [Fixtures](articles/fixtures.md)
-* [Parameterized Tests](articles/parameterized.md)
-* [Organizing Tests](articles/organizing_tests.md)
-* [Test Coverage](articles/test_coverage.md)
-* [Recap Puzzle](articles/find_pairs.md)
+* [Unit Tests](articles/unit_tests.rst)
+* [Fixtures](articles/fixtures.rst)
+* [Parameterized Tests](articles/parameterized.rst)
+* [Organizing Tests](articles/organizing_tests.rst)
+* [Test Coverage](articles/test_coverage.rst)
+* [Recap Puzzle](articles/find_pairs.rst)
 
 ## Appendix
 
-* [Quotes on Testing](articles/quotes.md)
-* [Instructions for Trainers](articles/instructions_for_trainers.md)
+* [Quotes on Testing](articles/quotes.rst)
+* [Instructions for Trainers](articles/instructions_for_trainers.rst)
 
 ## Links
 

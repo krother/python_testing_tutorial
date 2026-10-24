@@ -48,11 +48,11 @@ Chapters
 .. toctree::
    :maxdepth: 1
 
-   articles/unit_tests.md
-   articles/fixtures.md
-   articles/parameterized.md
-   articles/organizing_tests.md
-   articles/test_coverage.md
+   articles/unit_tests.rst
+   articles/fixtures.rst
+   articles/parameterized.rst
+   articles/organizing_tests.rst
+   articles/test_coverage.rst
 
 Appendix
 --------
@@ -61,9 +61,9 @@ Appendix
    :maxdepth: 1
 
    articles/links.rst
-   articles/quotes.md
-   articles/find_pairs.md
-   articles/instructions_for_trainers.md
+   articles/quotes.rst
+   articles/find_pairs.rst
+   articles/instructions_for_trainers.rst
 
 
 .. topic:: License
