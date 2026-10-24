@@ -60,18 +60,10 @@ Appendix
 .. toctree::
    :maxdepth: 1
 
+   articles/links.rst
    articles/quotes.md
    articles/find_pairs.md
    articles/instructions_for_trainers.md
-
-Links
------
-
--  `Python Testing Tutorial <https://katyhuff.github.io/python-testing/>`__ - by Kathryn Huff
--  `Introduction to pytest <https://www.youtube.com/watch?v=UPanUFVFfzY>`__ - by Michael Tom-Wing and Christie Wilson
--  `Test & Code Podcast <http://testandcode.com/>`__ - by Brian Okken
--  `The Clean Code Talks – Unit Testing <http://www.youtube.com/watch?v=wEhu57pih5w&feature=channel>`__
--  `Test-Driven-Development <https://www.youtube.com/watch?v=L4hOiGOKSxQ>`__ - by H.Percival
 
 
 .. topic:: License
