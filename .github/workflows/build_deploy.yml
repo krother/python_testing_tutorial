@@ -1,0 +1,34 @@
+
+name: deploy teaching
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+
+    - name: checkout repo
+      uses: actions/checkout@v1
+
+    - name: build static html
+      run: |
+        curl -LsSf https://astral.sh/uv/install.sh | sh
+        uv sync
+        uv run make html
+
+    - name: copy to academis server 
+      uses: appleboy/scp-action@master
+      with:
+        host: ${{ secrets.ACADEMIS_HOST }}
+        username: ${{ secrets.ACADEMIS_USERNAME }}
+        port: 22
+        key: ${{ secrets.SSH_PRIVATE_KEY }}
+        source: build/html/*
+        target: /www/academis/python_testing
+        rm: true
+        strip_components: 2
