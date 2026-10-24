@@ -1,0 +1,15 @@
+[project]
+name = "python_testing_stutorial"
+version = "0.1.0"
+description = "exercises for pytest"
+readme = "README.md"
+requires-python = ">=3.14.9"
+dependencies = [
+    "sphinx==8.2.3",
+    "sphinx-design",
+    "sphinx-copybutton",
+    "roman-numerals",
+    "myst-parser",
+    "furo",
+    "sphinxcontrib-svg2pdfconverter[CairoSVG]", 
+]
